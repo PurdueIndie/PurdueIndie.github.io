@@ -23,6 +23,7 @@ hr
 {
 	top: 5em;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
 }
 
 #main-menu li
@@ -31,8 +32,8 @@ hr
 	opacity: 0.7;
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-top: 0.8em;
-	padding-bottom: 0.8em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	margin-top: 0.4em;
 	margin-bottom: 0.4em;
 	height: 1em;
@@ -43,4 +44,5 @@ hr
 #main-menu li:hover
 {
 	opacity: 0.9;
+	background-color: #abc;
 }
