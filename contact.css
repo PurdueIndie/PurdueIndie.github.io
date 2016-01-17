@@ -1,0 +1,10 @@
+#logo
+{
+	height: 6em;
+	position: relative;
+	top: 1em;
+	width: 6em;
+	z-index: 1000;
+    margin: 0.5em;
+    display: inline;
+}

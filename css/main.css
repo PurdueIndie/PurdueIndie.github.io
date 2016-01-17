@@ -24,6 +24,11 @@ ul
 	position: relative;
 }
 
+#doubleTitleBar
+{
+    left: 8em;
+}
+
 #logo
 {
 	height: 6em;
@@ -31,6 +36,8 @@ ul
 	top: 1em;
 	width: 6em;
 	z-index: 1000;
+    margin: 0.5em;
+    display: inline;
 }
 
 #titlebar
@@ -48,4 +55,18 @@ ul
 	position: relative;
 	top: 2.75em;
 	width: 100%;
+}
+
+#titlebar a:hover
+{
+    color: gold;
+}
+
+#titlebar li
+{
+    position: relative
+    display: inline;
+    width: auto;
+    margin: .5em;
+    float: left;
 }
