@@ -6,12 +6,19 @@ img
 {
 	display: block;
 	position: relative;
+	top: 5em;
 	font-family: 'Montserrat', sans-serif;
 }
 
-	#main-menu a
-	{
-		display: block;
-		height: 1em;
-		width: 10em;
-	}
+#main-menu li
+{
+	background-color: #4dffff;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	height: 1em;
+	width: auto;
+}
