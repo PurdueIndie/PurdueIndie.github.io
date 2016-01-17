@@ -26,13 +26,21 @@ ul
 	position: relative;
 }
 
-#logo
+#logoBack
 {
 	height: 6em;
 	position: absolute;
 	top: 1em;
 	width: 6em;
 	z-index: 1000;
+}
+
+#logoFront {
+    height: 6em;
+	position: absolute;
+	top: 1em;
+	width: 6em;
+	z-index: 3000;
 }
 #titlebar
 {
@@ -48,4 +56,5 @@ ul
 	position: relative;
 	top: 2.75em;
 	width: 100%;
+    z-index: 2000;
 }
