@@ -1,3 +1,23 @@
+a
+{
+	color: white;
+	text-decoration: none;
+	width: 100%;
+}
+	a:visited
+	{
+		color: white;
+	}
+	a:hover
+	{
+		color: white;
+	}
+
+hr 
+{
+    width: 100%;
+}
+
 #main-menu
 {
 	top: 5em;
@@ -16,8 +36,4 @@
 	height: 1em;
 	width: 10em;
 	text-align: center;
-}
-
-hr {
-    width: 100%;
 }
