@@ -36,6 +36,7 @@ ul
 }
 #titlebar
 {
+	background-image: url("images/texture.jpg");
 	border-bottom-width: 0.3em;
 	border-color: black;
 	border-left-width: 0;
