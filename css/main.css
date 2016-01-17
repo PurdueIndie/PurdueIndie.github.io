@@ -2,14 +2,15 @@ a
 {
 	color: white;
 	text-decoration: none;
+	width: 100%;
 }
 	a:visited
 	{
-		color: gray;
+		color: white;
 	}
 	a:hover
 	{
-		color: gold;
+		color: white;
 	}
 body
 {
@@ -27,10 +28,10 @@ ul
 
 #logo
 {
-	height: 3.933em;
+	height: 6em;
 	position: absolute;
 	top: 1em;
-	width: 3.933em;
+	width: 6em;
 	z-index: 1000;
 }
 #titlebar
@@ -42,9 +43,9 @@ ul
 	border-style: solid;
 	border-top-width: 0.3em;
 	float: right;
-	height: 1.5em;
+	height: 2em;
 	margin-bottom: 5em;
 	position: relative;
-	top: 2em;
+	top: 2.75em;
 	width: 100%;
 }
