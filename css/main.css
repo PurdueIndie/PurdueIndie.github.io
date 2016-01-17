@@ -11,6 +11,10 @@ a
 	{
 		color: gold;
 	}
+body
+{
+    background-url: http://api.thumbr.it/whitenoise-361x370.png?background=575c5eff&noise=bfbfbf&density=31&opacity=39;
+}
 div
 {
 	display:block;
