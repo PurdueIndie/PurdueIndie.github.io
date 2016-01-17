@@ -1,0 +1,46 @@
+a
+{
+	color: black;
+	text-decoration: none;
+}
+	a:visited
+	{
+		color: gray;
+	}
+	a:hover
+	{
+		color: gold;
+	}
+div
+{
+	display:block;
+}
+ul
+{
+	list-style: none;
+	position: relative;
+}
+
+#logo
+{
+	height: 3.933em;
+	position: absolute;
+	top: 1em;
+	width: 3.933em;
+	z-index: 1000;
+}
+#titlebar
+{
+	border-bottom-width: 0.3em;
+	border-color: black;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-style: solid;
+	border-top-width: 0.3em;
+	float: right;
+	height: 1.5em;
+	margin-bottom: 5em;
+	position: relative;
+	top: 2em;
+	width: 100%;
+}
