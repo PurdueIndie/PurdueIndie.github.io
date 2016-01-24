@@ -14,4 +14,3 @@ function horizontallyCenter(thingYouWantToCenter)
 }
 //play with it on your browser
 horizontallyCenter("#title");//okay line
-horizontallyCenter("#title");//not okay line
