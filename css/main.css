@@ -8,6 +8,7 @@
 ::-moz-selection {
   background: #ffb7b7; /* Gecko Browsers */
 }
+
 a
 {
 	color: white;
@@ -28,17 +29,41 @@ div
 	display:block;
 }
 
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+}
+
 ul
 {
 	list-style: none;
 	position: relative;
 }
+
 .contactLogos {
     display: inline;
     margin: 1em;
     height: 5em;
     width: 5em;
 }
+
+.question {
+    text-align: center;
+    margin: 1em;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    text-align: center;
+    margin: 1em;
+}
+
 #doubleTitleBar
 {
     left: 8em;
