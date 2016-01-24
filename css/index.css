@@ -29,7 +29,7 @@ hr
 #main-menu li
 {
 	/*background-color: #44ddff;*/
-	opacity: 0.9;
+	opacity: 1;
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 0.5em;
@@ -44,17 +44,20 @@ hr
 #main-menu li:hover
 {
 	opacity: 1;
+	text-shadow: #FFF 0 0 3px;
 	/*background-color: #abc;*/
 }
 
 #title
 {
 	position: fixed;
-	top: 6em;
-	left: 18em;
+	top: 4em;
+	left: 12em;
 	width: 16em;
-	font-size: 150%;
+	font-size: 200%;
 	text-align: center;
 	color: white;
-	font-family: 'Montserrat', sans-serif;	
+	font-family: 'coneriaScript';
+/*	font-family: 'Montserrat', sans-serif;	
+*/	text-shadow: #aaf 0 0 10px;
 }
