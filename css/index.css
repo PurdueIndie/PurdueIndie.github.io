@@ -49,12 +49,12 @@ hr
 
 #title
 {
-	position: relative;
+	position: fixed;
 	top: 6em;
+	left: 18em;
 	width: 16em;
 	font-size: 150%;
 	text-align: center;
 	color: white;
-	margin: 0 auto;
 	font-family: 'Montserrat', sans-serif;	
 }
