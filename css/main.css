@@ -29,7 +29,12 @@ ul
 	list-style: none;
 	position: relative;
 }
-
+.contactLogos {
+    display: inline;
+    margin: 1em;
+    height: 5em;
+    width: 5em;
+}
 #doubleTitleBar
 {
     left: 8em;
@@ -44,6 +49,11 @@ ul
 	z-index: 1000;
     margin: 0.5em;
     display: inline;
+}
+
+#logosDiv {
+    width: 100%;
+    text-align: center;
 }
 
 #titlebar
