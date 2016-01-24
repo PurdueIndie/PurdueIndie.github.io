@@ -44,6 +44,7 @@ hr
 #main-menu li:hover
 {
 	opacity: 1;
+	text-shadow: #FFF 0 0 3px;
 	/*background-color: #abc;*/
 }
 
@@ -57,4 +58,5 @@ hr
 	text-align: center;
 	color: white;
 	font-family: 'Montserrat', sans-serif;	
+	text-shadow: #aaf 0 0 10px;
 }
