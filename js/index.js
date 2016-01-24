@@ -6,8 +6,12 @@ $(document).scroll(function()
 		//10 was our original emSize in css. So it's 10em - how much we scrolled*slow factor = slower scrolling!
 });
 
-function center(positionOfThingYouWantToCenter)
+function horizontallyCenter(thingYouWantToCenter)
 {
-	return ($window.width() - positionOfThingYouWantToCenter)/2;
+	console.log("centered");
+	$(thingYouWantToCenter).css("left", (($(window).width() - $(thingYouWantToCenter).css("width"))/2) + "px");
+	console.log("not centered");
 }
-
+//play with it on your browser
+horizontallyCenter("#title");//okay line
+horizontallyCenter("#title");//not okay line
