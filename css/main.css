@@ -29,11 +29,17 @@ div
 	display:block;
 }
 
-h2 {
+h2 
+{
     font-size: 2em;
     text-align: center;
     margin: auto;
     margin-top: 2em;
+}
+
+html 
+{
+    overflow-x: hidden;
 }
 
 ul
@@ -42,23 +48,27 @@ ul
 	position: relative;
 }
 
-.contactLogos {
+.contactLogos 
+{
     display: inline;
     margin: 1em;
     height: 5em;
     width: 5em;
 }
 
-.question {
+.question 
+{
     text-align: center;
     margin: 1em;
 }
 
-.question:hover {
+.question:hover 
+{
     cursor: pointer;
 }
 
-.answer {
+.answer 
+{
     display: none;
     text-align: center;
     margin: 1em;
@@ -80,7 +90,8 @@ ul
     display: inline;
 }
 
-#logosDiv {
+#logosDiv 
+{
     width: 100%;
     text-align: center;
 }
