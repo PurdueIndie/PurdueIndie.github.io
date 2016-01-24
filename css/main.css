@@ -1,3 +1,7 @@
+@font-face {
+		font-family: coneriaScript;
+		src: url("../fonts/Demo_ConeriaScript.ttf");
+}
 ::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
 }
@@ -80,7 +84,7 @@ ul
 
 #titlebar li
 {
-    position: relative
+    position: relative;
     display: inline;
     width: auto;
     margin: .5em;
