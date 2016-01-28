@@ -48,6 +48,33 @@ ul
 	position: relative;
 }
 
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 80%;
+    height: 50em;
+    margin: 3em;
+}
+
+th, tr {
+    height: 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.answer 
+{
+    display: none;
+    text-align: center;
+    margin: 1em;
+}
+
+.circularPicture {
+    border-radius: 350px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
 .contactLogos 
 {
     display: inline;
@@ -56,6 +83,10 @@ ul
     width: 5em;
 }
 
+.pictureCell {
+    height: 250px;
+    vertical-align: middle;
+}
 .question 
 {
     text-align: center;
@@ -67,12 +98,6 @@ ul
     cursor: pointer;
 }
 
-.answer 
-{
-    display: none;
-    text-align: center;
-    margin: 1em;
-}
 
 #doubleTitleBar
 {
