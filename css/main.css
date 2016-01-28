@@ -29,6 +29,14 @@ div
 	display:block;
 }
 
+h1
+{
+    font-size: 2.5em;
+    text-align: center;
+    margin: auto;
+    margin-top: .5em;
+}
+
 h2 
 {
     font-size: 2em;
@@ -37,9 +45,26 @@ h2
     margin-top: 2em;
 }
 
+h3
+{
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
 html 
 {
     overflow-x: hidden;
+}
+
+p
+{
+    width: 90%;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 ul
@@ -83,6 +108,11 @@ th, tr {
     width: 5em;
 }
 
+.contactLogos:hover 
+{
+    color: dodgerblue;
+}
+
 .pictureCell {
     height: 250px;
     vertical-align: middle;
@@ -98,16 +128,29 @@ th, tr {
     cursor: pointer;
 }
 
+#aboutOL
+{
+    width: 90%;
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#aboutOL li
+{
+    margin: .3em;
+    list-style-type: decimal;
+}
 
 #doubleTitleBar
 {
-    left: 8em;
+    left: 8.5em;
 }
 
 #logo
 {
 	height: 6em;
-	position: absolute;
+	position: relative;
 	top: 1em;
 	width: 6em;
 	z-index: 1000;
@@ -133,9 +176,10 @@ th, tr {
 	float: right;
 	height: 2em;
 	margin-bottom: 5em;
-	position: relative;
+	position: absolute;
 	top: 3.2em;
 	width: 100%;
+    z-index: 0;
 }
 
 #titlebar a:hover
