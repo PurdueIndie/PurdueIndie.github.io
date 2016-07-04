@@ -1,0 +1,40 @@
+.gameDescription{
+	background-color: #000;
+	color: white;
+	display: block;
+	font-family: Arial, sans-serif;
+	height: 13em;
+	margin: auto;
+	margin-bottom: 1em;
+	max-width: 50em;
+	text-decoration: none;
+}
+	.gameDescription>img{
+		display: inline;
+		float: left;
+		height: 100%;
+		width: 40%;
+		border-radius: 0em 0em 0em 0em;
+	};
+	.gameDescription>p{
+		display: inline;
+	}
+	.gameDescription>span{
+		display: inline-block;
+		float: left;
+		line-height: 1.2em;
+		margin-top: 2em;
+		margin-left: 1em;	
+		max-width: 55%;	
+	}
+	.gameDescription>span>h1{
+		display: inline;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+	}
+	.gameDescription>span>h2{
+		display: inline;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+	}
+
