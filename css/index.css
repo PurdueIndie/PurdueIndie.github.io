@@ -19,31 +19,43 @@ hr
     width: 100%;
 }
 
-#main-menu
+#menu
 {
 	top: 5em;
+	float: top;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5em;
+	width: 100%;
+	z-index: 2000;
+	/*style="position: relative; left: 1em; top: 10em; z-index: 2000;"*/
 }
 
-#main-menu li
+#menu li
 {
 	/*background-color: #44ddff;*/
+	float: left;
+	height: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	margin-top: 0.4em;
-	margin-bottom: 0.4em;
-	height: 1em;
-	width: 10em;
 	text-align: left;
+	width: 10em;
 }
 
-#main-menu li:hover
+#menu li:hover
 {
 	text-shadow: #FFF 0 0 3px;
-	/*background-color: #abc;*/
+	background-color: #abc;
+}
+
+#splash
+{
+	height: 100vh;
+	overflow: hidden;
+	width: 100vh;
 }
 
 #title
