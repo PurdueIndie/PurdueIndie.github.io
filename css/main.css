@@ -7,10 +7,10 @@
 		src: url("../fonts/Demo_ConeriaScript.ttf");
 }
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+  background: rgba(255, 204, 38, 1); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
+  background: rgba(255, 204, 38, 1); /* Gecko Browsers */
 }
 
 a

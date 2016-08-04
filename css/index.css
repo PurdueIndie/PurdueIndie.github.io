@@ -84,11 +84,23 @@ html
 }
 #menu-about:hover
 {
-	background-color: #0DDFFF;
+	background-color: #57C4E6;
 }
 #menu-calendar:hover
 {
-	background-color: #0DDFFF;
+	background-color: #50DE84;
+}
+#menu-games:hover
+{
+	background-color: #E8C348;
+}
+#menu-podcasts:hover
+{
+	background-color: #DE9250;
+}
+#menu-contact:hover
+{
+	background-color: #DE475B;
 }
 
 #splash
@@ -111,5 +123,5 @@ html
 	color: white;
 	font-family: 'eightBit';
 /*	font-family: 'Montserrat', sans-serif;	
-*/	text-shadow: 7px 7px 3px rgba(255, 204, 38, 1);
+*/	text-shadow: 1px 1px 3px rgba(255, 204, 38, 1);
 }
