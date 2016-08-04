@@ -19,6 +19,13 @@ hr
     width: 100%;
 }
 
+html
+{
+	background: linear-gradient(#293E62,#FFF); 
+	background-attachment: fixed;
+	background-repeat: none;	
+}
+
 #home
 {
 	width: 1.5em;
