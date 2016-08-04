@@ -1,4 +1,8 @@
 @font-face {
+        font-family: eightBit;
+        src: url("../fonts/8-BIT WONDER.TTF");
+}
+@font-face {
 		font-family: coneriaScript;
 		src: url("../fonts/Demo_ConeriaScript.ttf");
 }
