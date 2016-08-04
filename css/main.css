@@ -67,12 +67,6 @@ p
     margin-left: 5%;
 }
 
-ul
-{
-	list-style: none;
-	position: relative;
-}
-
 table {
     table-layout: fixed;
     border-collapse: collapse;
@@ -85,6 +79,12 @@ th, tr {
     height: 1em;
     text-align: center;
     vertical-align: middle;
+}
+
+ul
+{
+	list-style: none;
+	position: relative;
 }
 
 .answer 
