@@ -1,0 +1,34 @@
+p
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: left;
+	padding: 10px;
+}
+#about
+{
+	position: relative;
+	z-index: 1;
+}
+#about-image
+{
+	position: relative;
+	top: -1.7em;
+	overflow: hidden;
+	height: 12em;
+	margin: 0;
+}
+#about-content
+{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+#about-header
+{
+	display: inline-block;
+	font-family: Montserrat;
+	background-color: #57C4E6;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}
