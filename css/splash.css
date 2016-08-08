@@ -13,6 +13,7 @@ html
 
 #content
 {
+	padding: 1em;
 	background-color: #EBEBEB;
 	z-index: 9000;
 }
@@ -85,10 +86,11 @@ html
 
 #splash
 {
+	z-index: -9000;
 	height: 100vh;
-	overflow: hidden;
-	width: 100vh;
+	/*overflow: hidden;*/
 	margin: 0;
+	position: relative;/*required for overflow:hidden to work...*/
 }
 
 #title
