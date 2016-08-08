@@ -5,13 +5,12 @@
 }
 #calendar-image
 {
-	height: 0em;
-	top: -1.7em;
+	height: 10em;
+	background: linear-gradient(#5DB033, #000);
 }
 #calendar-content
 {
-	top: -1.7em;
-	background-color: #eee;
+	background-color: #fff;
 }
 #calendar-header
 {

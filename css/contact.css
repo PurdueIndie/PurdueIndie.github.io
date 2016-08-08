@@ -1,0 +1,18 @@
+#contact
+{
+	position: relative;
+	z-index: 1;
+}
+#contact-image
+{
+	background: linear-gradient(#FF3030, #000);
+	height: 10em;
+}
+#contact-content
+{
+	background-color: #fff;
+}
+#contact-header
+{
+	background-color: #DE475B;
+}

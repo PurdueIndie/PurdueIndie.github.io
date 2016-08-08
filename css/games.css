@@ -38,3 +38,21 @@
 		font-weight: 300;
 	}
 
+#games
+{
+	background: linear-gradient(#FFCF30, #FF6130);	
+	position: relative;
+	z-index: 1;
+}
+#games-image
+{
+	height: 10em;
+}
+#games-content
+{
+	background-color: #fff;
+}
+#games-header
+{
+	background-color: #FFCC26;
+}

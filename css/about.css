@@ -5,12 +5,10 @@
 }
 #about-image
 {
-	/*background: linear-gradient(#293e62, #FFF);*/	
-	top: -1.7em;
+	background: linear-gradient(#293e62, #FFF);
 }
 #about-content
 {
-	top: -1.7em;
 	background-color: #fff;
 }
 #about-header
