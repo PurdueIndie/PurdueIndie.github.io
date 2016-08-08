@@ -15,13 +15,13 @@
 
 a
 {
-	color: white;
+	color: black;
 	text-decoration: none;
 	width: 100%;
 }
 	a:visited
 	{
-		color: white;
+		color: black;
 	}
 	a:hover
 	{
@@ -35,6 +35,7 @@ div
 
 h1
 {
+    font-family: coneriaScript;
     font-size: 2.5em;
     text-align: center;
     margin: auto;
@@ -151,6 +152,15 @@ ul
 {
     margin: .3em;
     list-style-type: decimal;
+}
+
+#content
+{
+    margin: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
 }
 
 #doubleTitleBar

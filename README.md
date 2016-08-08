@@ -1,5 +1,5 @@
 #purduegamedev.club
-This is the Purdue Independent Game Developer's Club's main website.
+This is the Purdue Independent Game Developer's Club's main website. Go to the development branch to see readable code. Everything in master has been minified. You should not be making any commits to master except for merging with development branch or minifying changes.
 
 ##Primary Contributors
 * Charlie Su (@DontSuCharlie)

@@ -38,6 +38,18 @@ function parallax()
 }
 
 /*
+Function adds the tiles to the page
+
+1) Grabs position and height of top in px
+2) Grabs width
+2) Places bricks next to each other
+*/
+
+/*
+
+*/
+
+/*
 Main execution of our javascript (document.ready)
 */
 $(document).ready(function()
