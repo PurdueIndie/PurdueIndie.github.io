@@ -32,6 +32,7 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/splash.css">
 <link rel="stylesheet" type="text/css" href="css/about.css">
+<link rel="stylesheet" type="text/css" href="css/calendar.css">
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <!--end stylesheets-->
 <!--javascript-->
@@ -46,7 +47,7 @@
         <div id="title">Purdue Indie Game Developer's Club</div>
         <div id="menu-background">
             <ul id="menu">
-            	<a href="a.html"><li id="menu-about">ABOUT</li></a>
+            	<a href="index.html#about"><li id="menu-about">ABOUT</li></a>
                 <a href="calendar.html"><li id="menu-calendar">CALENDAR</li></a>
             	<a href="games.html"><li id="menu-games">GAMES</li></a>
             	<a href="pod.html"><li id="menu-podcasts">PODCASTS</li></a>
@@ -56,22 +57,25 @@
     </div>
     <div id="content">
         <div id="about">
-            <div id="about-image">
+            <div class="cover-image" id="about-image">
                 <img src="img/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
                 <img src="img/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
             </div>
-            <div id="about-content">
-                <h1 id="about-header">ABOUT</h1>
-                <img src="img/main/train.png" alt="Train" style="display: inline-block; height: 2em; margin-left: 1px;">
+            <div class="content" id="about-content">
+                <h1 class="header" id="about-header">ABOUT</h1>
+                <img src="example_sprite.jpg" alt="sprite" class="header-sprite">
+                <hr>
                 <p>We're a small but close-knit club founded in the Spring of 2015. We're focused on helping each other learn and develop games with the hopes that our members will publish their own games.                    
                 </p>
             </div>
         </div>
 
         <div id="calendar">
-            <div id="calendar-image">
+            <div class="cover-image" id="calendar-image">
             </div>
-            <div id="calendar-content">
+            <div class="content" id="calendar-content">
+                <h1 class="header" id="calendar-header">CALENDAR</h1>
+
             </div>
         </div>
 
