@@ -14,6 +14,7 @@ html
 #content
 {
 	background-color: #EBEBEB;
+	z-index: 9000;
 }
 #home
 {
@@ -28,7 +29,7 @@ html
 	background-color: #EBEBEB;/*#333b3d*/
 	position: absolute;
 	bottom: 0px;
-	left: 50%;
+	left: 100%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
 	width: 100%;
@@ -40,7 +41,7 @@ html
 #menu li
 {
 	position: relative;
-	right: 50%;
+	right: 100%;
 	display: inline;
 	background-color: #EBEBEB;
 	height: 1em;
@@ -55,7 +56,7 @@ html
 #menu-background
 {
 	z-index: 2000;
-	height: 4.9em;
+	height: 3.5em;
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
