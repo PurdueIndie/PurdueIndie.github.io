@@ -24,21 +24,6 @@ CSS of each box:
 Formatting string, for easier writing in function displayGames()
 Courtesy of http://stackoverflow.com/questions/610406/javascript-equivalent-to-printf-string-format
 */
-
-// First, checks if it isn't implemented yet.
-/*
-if (!String.prototype.format) {
-  String.prototype.format = function() {
-    var args = arguments;
-    return this.replace(/{(\d+)}/g, function(match, number) { 
-      return typeof args[number] != 'undefined'
-        ? args[number]
-        : match
-      ;
-    });
-  };
-}*/
-
 if(!String.prototype.format)//checks if format has already been defined (where String.prototype is "a string", and format is the function name)
 {
 	String.prototype.format = function()
@@ -50,8 +35,6 @@ if(!String.prototype.format)//checks if format has already been defined (where S
 		var args = arguments;//this is necessary, to convert arguments object into an actual array
 		return this.replace(/{(\d+)}/g, function(match, number)
 		{
-			//console.log(args[number]);
-			//console.log(arguments[number]);
 			//return typeof arguments[number] != 'undefined' ? arguments[number]:match;
 			if(typeof args[number] != "undefined")//if not undefined
 				return args[number];//return argument
@@ -126,6 +109,9 @@ function displayGames(list)
 	}
 }
 
+/*
+Function for attaching .hover() to an element.
+*/
 function attachHover(id)
 {
 	$("#"+id).hover(function(){

@@ -1,0 +1,108 @@
+hr 
+{
+    width: 100%;
+}
+
+html
+{
+	background: linear-gradient(#5BD1E3, #fff);/*#293E62,#FFF*/
+	/*background: linear-gradient(#293e62, #FFF);*/
+	background-attachment: fixed;
+	background-repeat: none;	
+}
+
+#content
+{
+	background-color: #EBEBEB;
+	z-index: 9000;
+}
+#home
+{
+	width: 1.5em;
+	height: 1.5em;
+	padding-top: 0.4em;
+	padding-left: 4.5em;
+}
+
+#menu
+{
+	background-color: #EBEBEB;/*#333b3d*/
+	position: absolute;
+	bottom: 0px;
+	left: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	width: 100%;
+	z-index: 2000;
+	text-align: center;
+	height: 2.4em;
+}
+
+#menu li
+{
+	position: relative;
+	right: 100%;
+	display: inline;
+	background-color: #EBEBEB;
+	height: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	text-align: center;
+	width: 7em;
+}
+
+#menu-background
+{
+	z-index: 2000;
+	height: 3.5em;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background-color: #EBEBEB;
+}
+#menu-about:hover
+{
+	background-color: #57C4E6;
+}
+#menu-calendar:hover
+{
+	background-color: #50DE84;
+}
+#menu-games:hover
+{
+	background-color: #FFCC26;
+}
+#menu-podcasts:hover
+{
+	background-color: #DE9250;
+}
+#menu-contact:hover
+{
+	background-color: #DE475B;
+}
+
+#splash
+{
+	height: 100vh;
+	overflow: hidden;
+	width: 100vh;
+	margin: 0;
+}
+
+#title
+{
+	position: fixed;
+	top: 4em;
+	left: 8em;
+	width: 16em;
+	font-size: 200%;
+	max-width: 55%;
+	text-align: center;
+	line-height: 1.3;
+	color: white;
+	font-family: 'eightBit';
+/*	font-family: 'Montserrat', sans-serif;	
+*/	text-shadow: 1px 1px 3px rgba(255, 204, 38, 1);
+}
