@@ -51,9 +51,8 @@
         <div id="menu-background">
             <ul id="menu">
             	<a href="index.html#about"><li id="menu-about">ABOUT</li></a>
+                <a href="index.html#games"><li id="menu-games">GAMES</li></a>
                 <a href="index.html#calendar"><li id="menu-calendar">CALENDAR</li></a>
-            	<a href="index.html#games"><li id="menu-games">GAMES</li></a>
-            	<a href="index.html#podcasts"><li id="menu-podcasts">PODCASTS</li></a>
             	<a href="index.html#contact"><li id="menu-contact">CONTACT</li></a>
             </ul>
         </div>
@@ -64,7 +63,7 @@
                 <h1 class="header" id="about-header">ABOUT</h1>
                 <img src="example_sprite.jpg" alt="sprite" class="header-sprite">
                 <hr>
-                <p>We're a small but close-knit club founded in the Spring of 2015. We're focused on helping each other learn and develop games with the hopes that our members will publish their own games.                    
+                <p>We're a small but close-knit club founded in the Spring of 2015. We're focused on helping each other learn and develop games with the hopes that our members will publish their own games.        
                 </p>
             </div>
             <div class="cover-image" id="about-image">
@@ -73,21 +72,12 @@
             </div>            
         </div>
 
-        <div id="calendar">
-            <div class="content" id="calendar-content">
-                <h1 class="header" id="calendar-header">CALENDAR</h1>
-                <hr>
-            </div>
-            <div class="cover-image" id="calendar-image">
-                <img src="img/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
-                <img src="img/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
-            </div>
-        </div>
-
         <div id="games">
             <div class="content" id="games-content">
                 <h1 class="header" id="games-header">GAMES</h1>
+                <img src="example_sprite.jpg" alt="sprite" class="header-sprite">
                 <hr>
+                <img src="example_sprite.jpg" alt="sprite" class="header-sprite">
             </div>
             <div class="cover-image" id="games-image">
                 <img src="img/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
@@ -95,6 +85,20 @@
             </div>
         </div>
 
+        <div id="calendar">
+            <div class="content" id="calendar-content">
+                <h1 class="header" id="calendar-header">CALENDAR</h1>
+                <img src="example_sprite.jpg" alt="sprite" class="header-sprite">
+                <hr>
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=purdueindie%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0; display: block; margin: 0 auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="cover-image" id="calendar-image">
+                <img src="img/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
+                <img src="img/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
+            </div>
+        </div>
+
+<!--
         <div id="podcasts">
             <div class="content" id="podcasts-content">
                 <h1 class="header" id="podcasts-header">PODCASTS</h1>
@@ -105,11 +109,62 @@
                 <img src="img/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
             </div>
         </div>
+-->
 
         <div id="contact">
             <div class="content" id="contact-content">
                 <h1 class="header" id="contact-header">CONTACT</h1>
-                <hr>                
+                <img src="example_sprite.jpg" alt="sprite" class="header-sprite">
+                <hr>
+                <p>Send us an e-mail at <a class="contact-email" href="mailto:purdueindie@gmail.com">purdueindie@gmail.com</a>. If there are specific officers you'd like to reach out, click on any of their portraits.</p>
+                <div class="alignment-table">
+                    <div class="contact-portrait" id="contact-president">
+                        <img src="images/2016_officers/president.jpg" class="contact-image">
+                        <h3 class="contact-title">President</h3>
+                        <h3 class="contact-name">Charlie Su</h3>
+                        <h3 class="contact-status">Junior in Computer Science</h3>
+                        <h3 class="contact-email contact-status">charliesu@purdue.edu</h3>
+                    </div>
+                    <div class="contact-portrait" id="contact-vice-president-a">
+                        <img src="images/2016_officers/vicePresidentA.png" class="contact-image">
+                        <h3 class="contact-title">Vice President</h3>
+                        <h3 class="contact-name">Brendan Raftery</h3>
+                        <h3 class="contact-status">Sophomore in Computer Science</h3>
+                        <h3 class="contact-email contact-status">braftery@purdue.edu</h3>
+                    </div>
+                    <div class="contact-portrait" id="contact-vice-president-b">
+                        <img src="images/2016_officers/vicePresidentB.png" class="contact-image">
+                        <h3 class="contact-title">Vice President</h3>
+                        <h3 class="contact-name">Henry Poggie</h3>
+                        <h3 class="contact-status">Sophomore in Computer Science</h3>
+                        <h3 class="contact-email contact-status">hpoggie@purdue.edu</h3>                        
+                    </div>
+                </div>
+                <div class="alignment-table">                
+                    <div class="contact-portrait" id="contact-treasurer">
+                        <img src="images/2016_officers/treasurer.jpg" class="contact-image">
+                        <h3 class="contact-title">Treasurer</h3>
+                        <h3 class="contact-name">Nick Zetzl</h3>
+                        <h3 class="contact-status">Junior in Computer Science</h3>
+                        <h3 class="contact-email contact-status">nzetzl@purdue.edu</h3>                        
+                    </div>
+                    <div class="contact-portrait" id="contact-public-relations">
+                        <img src="images/2016_officers/pr.png" class="contact-image">
+                        <h3 class="contact-title">Public Relations</h3>
+                        <h3 class="contact-name">Jaimie Lantern</h3>
+                        <h3 class="contact-status">Sophomore in Computer Science</h3>
+                        <h3 class="contact-status">and Brain/Behavioral Sciences</h3>
+                        <h3 class="contact-email contact-status">@purdue.edu</h3>                        
+                    </div>
+                    <div class="contact-portrait" id="contact-advisor">
+                        <img src="images/2016_officers/advisor.png" class="contact-image">
+                        <h3 class="contact-title">Advisor</h3>
+                        <h3 class="contact-name">David Whittinghill</h3>
+                        <h3 class="contact-status">Professor of Computer Graphics Technology</h3>
+                        <h3 class="contact-email contact-status">dmwhittinghill@purdue.edu</h3>                        
+                    </div>
+                    <p>If you're looking for a <em>past</em> officer, <a href="officersList.html" class="contact-email">click here.</a></p>
+                </div>
             </div>
             <div class="cover-image" id="contact-image">
                 <img src="img/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
