@@ -5,6 +5,7 @@ This is the Purdue Independent Game Developer's Club's main website. Go to the d
 * Charlie Su (@DontSuCharlie)
 * Nick Zetzl (@nzetzl)
 * Brendan Raftery (@doctorb77)
+* Michael Pike (@pike4)
 
 ##Style Guide
 
