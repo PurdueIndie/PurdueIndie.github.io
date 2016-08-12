@@ -7,6 +7,7 @@
 	e. Menu should change on mobile
 	f. Games should keep its aspect ratio..
 2. Update the parallax function with the text-shadow so that it grabs the current CSS first (that way we just need to update the CSS for the entire thing to change)
+3. The website is slow - in terms of too many things on the website (scrolling down lags, even after all the resources have loaded!)
 
 #Fixed Issues
 1. The right invisible menu is clickable

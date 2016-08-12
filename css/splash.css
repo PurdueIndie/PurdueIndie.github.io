@@ -3,14 +3,6 @@ hr
     width: 100%;
 }
 
-html
-{
-	background: linear-gradient(#5BD1E3, #fff);/*#293E62,#FFF*/
-	/*background: linear-gradient(#293e62, #FFF);*/
-	background-attachment: fixed;
-	background-repeat: none;	
-}
-
 #home
 {
 	width: 1.5em;
@@ -53,7 +45,7 @@ html
 	z-index: 2000;
 	height: 3.5em;
 	position: absolute;
-	bottom: 0px;
+	top: calc(100vh - 3.5em);
 	width: 100%;
 	background-color: #EBEBEB;
 }
@@ -80,11 +72,16 @@ html
 
 #splash
 {
-	z-index: 1;
+	z-index: 2;
 	height: 100vh;
 	overflow: hidden;
 	margin: 0;
 	position: relative;/*required for overflow:hidden to work...*/
+	background: linear-gradient(#5BD1E3, #fff);/*#293E62,#FFF*/
+	/*background: linear-gradient(#293e62, #FFF);*/
+	background-attachment: fixed;
+	background-repeat: none;	
+
 }
 
 #title
