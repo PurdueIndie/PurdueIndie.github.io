@@ -28,9 +28,9 @@ function parallax()
 {
 	if($(document).scrollTop() < $(window).height())
 	{
-		//$("#menu-background").css("position", "absolute");		
-		//$("#menu-background").css("top", "");
-		//$("#menu-background").css("bottom", "0px");
+		$("#menu-background").css("position", "absolute");		
+		$("#menu-background").css("top", "");
+		$("#menu-background").css("bottom", "0px");
 		//Get how much the user has scrolled on the browser. This is a function dependent on jQuery
 		var scroll = $(document).scrollTop();
 		//Converts em (what we use in our css) to px
@@ -57,8 +57,15 @@ Function adds the tiles to the page
 */
 
 /*
-
+Scrolling
 */
+function scrollTo(id)
+{
+	console.log("yeah");
+	$("html, body").animate({
+		scrollTop: $(id).offset().top + (-55)
+	}, 1500);
+}
 
 /*
 Main execution of our javascript (document.ready)
@@ -67,6 +74,22 @@ $(document).ready(function()
 {
 	horizontallyCenter("#title");//okay line
 	parallax();
+$("#menu-about").click(function(){
+	scrollTo("#about");
+});
+$("#menu-games").click(function(){
+	scrollTo("#games");
+});
+$("#menu-podcasts").click(function(){
+	scrollTo("#podcasts");
+});
+$("#menu-calendar").click(function(){
+	scrollTo("#calendar");
+});
+$("#menu-contact").click(function(){
+	scrollTo("#contact");
+});
+
 });
 
 $(document).scroll(parallax);

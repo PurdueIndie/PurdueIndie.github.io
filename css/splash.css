@@ -38,6 +38,7 @@ hr
 	padding-bottom: 0.7em;
 	text-align: center;
 	width: 7em;
+	cursor: pointer;
 }
 
 #menu-background
@@ -72,7 +73,7 @@ hr
 
 #splash
 {
-	z-index: 2;
+	z-index: 1;
 	height: 100vh;
 	overflow: hidden;
 	margin: 0;
