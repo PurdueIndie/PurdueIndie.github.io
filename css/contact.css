@@ -1,9 +1,9 @@
 .alignment-table
 {
-	display: inline-block;
 	vertical-align: top;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
 }
 .contact-email
 {
@@ -17,7 +17,7 @@
 .contact-portrait
 {
 	display: inline-block;
-	margin: 5px;
+	margin: 10px;
 	vertical-align: top;
 	width: 20vw;
 }

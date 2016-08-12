@@ -19,7 +19,7 @@ a
 	{
 		color: black;
 	}
-	a:hover
+	a:not(.contact-portrait>a):hover
 	{
 		color: white;
 	}
