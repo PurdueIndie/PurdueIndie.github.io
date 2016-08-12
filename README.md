@@ -7,6 +7,22 @@ This is the Purdue Independent Game Developer's Club's main website. Go to the d
 * Brendan Raftery (@doctorb77)
 * Michael Pike (@pike4)
 
+##Things Left to Implement
+1. Finish the Splash page
+	*Have a character with a chat bubble. That bubble will be our version of announcements (e.g. "Sign up for the Global Game Jam!" or "We've got a new game!")
+	*Clouds with the same text shadow as our title
+	*A pixel art version that's lighter of the clock tower
+	*Fix the way everything's placed so it doesn't break on mobile
+2. Finish the About section
+	*Add the Q and A
+	*Add the flashcards thing
+3. Supplement the placeholder art
+4. Extras (not necessary, but would be really cool to have)
+	*Click on all flashcards for a secret?
+	*Splash page is a playable game?
+	*Different e-mail subscriptions for new games released vs club meetings vs events?
+
+
 ##Style Guide
 
 ###CSS
