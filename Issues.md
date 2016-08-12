@@ -1,5 +1,11 @@
 #Current Issues
 1. The website is 100% not mobile friendly
+	a. For the Contact section, we can make it so that it's a grid of 2 x 3 instead of 3 x 2 on the phone
+	b. Calendar is good
+	c. Podcasts is good
+	d. Splash is completely broken
+	e. Menu should change on mobile
+	f. Games should keep its aspect ratio..
 2. Update the parallax function with the text-shadow so that it grabs the current CSS first (that way we just need to update the CSS for the entire thing to change)
 
 #Fixed Issues

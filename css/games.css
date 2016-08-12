@@ -1,42 +1,112 @@
+.games-button
+{
+	background-color: #EBEBEB;
+	font-family: Montserrat;
+	display: inline-block;
+	font-size: 150%;
+	padding: 15px;
+	border-style: solid;
+	border-color: #333;
+	border-bottom-width: 5px;
+}
+	.games-button:hover
+	{
+		background-color: #FAFAFA;
+		cursor: pointer;
+	}
+	.games-button:active
+	{
+		position: relative;
+		top: 5px;
+		border-bottom-width: 0px;
+	}
+
 .gameDescription{
-	background-color: #000;
-	color: white;
+	position: relative;
+	background: linear-gradient(60deg, #fff,#ddd);
+	color: black;
 	display: block;
 	font-family: Arial, sans-serif;
-	height: 13em;
-	margin: auto;
+	height: 20em;
 	margin-bottom: 1em;
-	max-width: 50em;
+	width: 100%;
 	text-decoration: none;
+	overflow: hidden;
+	border-style: solid;
+	border-color: #444;
+	border-bottom-width: 10px;
 }
-	.gameDescription>img{
-		display: inline;
-		float: left;
-		height: 100%;
-		width: 40%;
-		border-radius: 0em 0em 0em 0em;
-	};
+.gameDescription:active
+{
+	position: relative;
+	top: 10px;
+	border-color: #fff;
+}
+.gameImage{
+	display: inline;
+	float: right;
+	height: 100%;
+	width: 50%;
+	border-radius: 0em 0em 0em 0em;
+};
+
 	.gameDescription>p{
 		display: inline;
 	}
 	.gameDescription>span{
+		position: relative;
 		display: inline-block;
 		float: left;
+		margin: 0;
 		line-height: 1.2em;
-		margin-top: 2em;
-		margin-left: 1em;	
-		max-width: 55%;	
+		padding-top: 2em;
+		padding-left: 1em;	
+		width: 48%;	
+		height: 18em;
 	}
 	.gameDescription>span>h1{
-		display: inline;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 400;
+		display: inline-block;
+		font-family: Montserrat, sans-serif;
+		padding: 10px;
+		border-left-style: solid;
+		border-left-width: 50px;
+		position: relative;
+		right: 50px;
+		font-size: 150%;
 	}
 	.gameDescription>span>h2{
-		display: inline;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 300;
+		padding-bottom: 0.5em;
+		display: block;
+		font-family: Montserrat, sans-serif;
+		font-size: 120%;
 	}
+.gamePlatforms>img{
+	width: 36px;
+	height: 36px;
+}
+.gamePlatforms
+{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.gameDate
+{
+	font-family: Montserrat;
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+
+#container
+{
+	margin-top: 20px;
+	border-style: solid;
+	border-color: #eee;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	padding: 5px;
+}
 
 #games
 {
@@ -55,4 +125,8 @@
 #games-header
 {
 	background-color: #FFCC26;
+}
+
+#in-development-button
+{
 }

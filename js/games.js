@@ -44,6 +44,14 @@ if(!String.prototype.format)//checks if format has already been defined (where S
 	};
 }
 
+/*defining image tags for OS platforms*/
+var desktop = "<img src=\"images/os_icons/desktop.png\">";
+var mobile = "<img src=\"images/os_icons/mobile.png\">";
+var windows = "<img src=\"images/os_icons/windows.png\">";//same icons for phone and desktop
+var linux = "<img src=\"images/os_icons/linux.png\">";
+var apple = "<img src=\"images/os_icons/apple.png\">";//same icons for mac and ios
+var android = "<img src=\"images/os_icons/android.png\">";
+
 /*
 Array holding the list of in progress games. 
 The key is a string (usually the game's title), the value is an object with descriptions of the game.
@@ -70,21 +78,34 @@ var completeGames = [
 		link: "/lol",
 		title: "A Bunny",
 		creator: "Bunny Man",
-		blurb: "Super Short Blurb",
 		image: "gallery/bunny.jpg",
 		description: "This is a bunny game! I like bunnies a lot. Ahahaha",
 		gif: "gallery/bunny.gif",
-		color: "#00458A"
+		color: "#3DCFFF",
+		date: "FALL 2016",
+		platforms: windows.concat(linux).concat(apple).concat(android)
 	},
 	{
 		link: "/lol",
 		title: "Legacy Dungeon",
 		creator: "Charlie Su and Anish Kannan",
-		blurb: "Super Short Blurb",
 		image: "gallery/CoverImage.png",
 		description: "High School Project",
 		gif: "gallery/CoverImage.gif",
-		color: "#8C6200"
+		color: "#DFB755",
+		date: "SPRING 2015",
+		platforms: android
+	},
+	{
+		link: "https://play.google.com/store/apps/details?id=com.MaxwellOldt.HoppO&hl=en",
+		title: "HoppO",
+		creator: "Maxwell Odt and Brendan Raftery",
+		image: "gallery/CoverImage.png",
+		description: "Go as far as you can as a little ball who hops from circle to circle while they rotate around. Try to go farther then any of your friends can. Take your time, but don't go too slow because there is a red wall at your heels trying to get you.",
+		gif: "gallery/CoverImage.gif",
+		color: "#4DFFA6",
+		date: "SPRING 2015",
+		platforms: android		
 	}
 ];
 
@@ -102,10 +123,14 @@ function displayGames(list)
 	{
 		var game = list[i];
 		component = "<a href=\"{0}\" class=\"gameDescription\" id=\"{1}\">\n".format(game.link, i);
-		component = component.concat("\t<img src=\"{0}\" alt=\"A screenshot of {1}\"></img>\n".format(game.image, game.title));
-		component = component.concat("\t<span><h1>{0}</h1>&nbsp;<h2>by {1}</h2>\n".format(game.title, game.creator));
-		component = component.concat("\t<p>{0}</p>\n</a></span>\n".format(game.description));
+		component = component.concat("\t<img class=\"gameImage\" src=\"{0}\" alt=\"A screenshot of {1}\"></img>\n".format(game.image, game.title));
+		component = component.concat("\t<span><h1>{0}</h1>&nbsp;<hr><h2>by {1}</h2>\n".format(game.title, game.creator));
+		component = component.concat("\t<p>{0}</p>\n".format(game.description));
+		component = component.concat("\t<div class=\"gameDate\">{0}</div>\n".format(game.date));
+		component = component.concat("\t<div class=\"gamePlatforms\">{0}</div>\n".format(game.platforms));
+		component = component.concat("</span></a>\n");
 		$("#container").append(component);
+		$("#" + i).find("h1").css("background-color", game.color);
 	}
 }
 
@@ -115,12 +140,12 @@ Function for attaching .hover() to an element.
 function attachHover(id)
 {
 	$("#"+id).hover(function(){
-	$(this).find("img").attr("src", completeGames[id].gif);
-	$(this).css("background-color", completeGames[id].color);
+	$("#"+id+" .gameImage").attr("src", completeGames[id].gif);
+	$(this).css("background", completeGames[id].color);
 }, function()
 {
-	$(this).find("img").attr("src", completeGames[id].image);
-	$(this).css("background-color", "black");
+	$("#"+id+" .gameImage").attr("src", completeGames[id].image);
+	$(this).css("background", "linear-gradient(90deg, #fff,#ddd)");
 });			
 }
 
