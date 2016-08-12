@@ -78,7 +78,8 @@ hr
 	overflow: hidden;
 	margin: 0;
 	position: relative;/*required for overflow:hidden to work...*/
-	background: linear-gradient(#5BD1E3, #fff);/*#293E62,#FFF*/
+	background-image: url("../images/splash/gradient.png");
+	/*background: linear-gradient(#5BD1E3, #fff);#293E62,#FFF*/
 	/*background: linear-gradient(#293e62, #FFF);*/
 	background-attachment: fixed;
 	background-repeat: none;	

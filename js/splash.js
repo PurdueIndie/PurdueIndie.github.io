@@ -36,7 +36,8 @@ function parallax()
 		//Converts em (what we use in our css) to px
 	    var emSize = parseFloat($("body").css("font-size"));
 		//Scale down the scroll factor by 0.4
-		$("#title").css("top", (10*emSize-scroll*0.4)+"px");
+		$("#title").css("transform", "translateY(" + (10*emSize-scroll*0.4)) + "px)";
+		//$("#title").css("top",(10*emSize-scroll*0.4) +"px");
 		//Calculates the position of the text shadow with 7px as the original position
 		var txt_shadow = 7 - (scroll * 0.04);
 		$("#title").css("textShadow", Math.abs(txt_shadow)  + "px " + txt_shadow + "px 3px rgba(0, 100, 100, 1)");
