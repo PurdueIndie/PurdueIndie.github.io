@@ -24,17 +24,18 @@ function horizontallyCenter(thingYouWantToCenter)
 This function is called whenever the browser detects scrolling.
 This function includes the parallax effect on the title, and the text-shadow changing position effect.
 */
-var top = true;
+var isAtTop = true;
 function parallax()
 {
 	if($(document).scrollTop() < $(window).height())
 	{
-		if(!top)
+		if(!isAtTop)
 		{
 			$("#menu-background").css("position", "absolute");		
 			$("#menu-background").css("top", "");
 			$("#menu-background").css("bottom", "0px");
-			top = true;			
+			isAtTop = true;
+			console.log("top?");
 		}
 		//Get how much the user has scrolled on the browser. This is a function dependent on jQuery
 		var scroll = $(document).scrollTop();
@@ -49,11 +50,12 @@ function parallax()
 	}
 	else//otherwise time to move the bar
 	{
-		if(top)
+		if(isAtTop)
 		{
+			console.log("bottom?");
 			$("#menu-background").css("position", "fixed");
 			$("#menu-background").css("top", "0px");
-			top = false;
+			isAtTop = false;
 		}
 	}
 }
