@@ -57,6 +57,7 @@ Array holding the list of in progress games.
 The key is a string (usually the game's title), the value is an object with descriptions of the game.
 */
 var inDevelopmentGames = [
+/*
 	{
 		link: "/lol",
 		title: "Still In Progress",
@@ -67,7 +68,7 @@ var inDevelopmentGames = [
 		color: "#FFF",
 		date: "FALL 2016",
 		platforms: linux.concat(apple).concat(windows)
-	}
+	}*/
 ];
 
 /*
