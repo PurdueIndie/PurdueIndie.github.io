@@ -1,5 +1,6 @@
 .games-button
 {
+	position: relative;
 	background-color: #EBEBEB;
 	font-family: Montserrat;
 	display: inline-block;
@@ -16,7 +17,6 @@
 	}
 	.games-button:active
 	{
-		position: relative;
 		top: 5px;
 		border-bottom-width: 0px;
 	}
