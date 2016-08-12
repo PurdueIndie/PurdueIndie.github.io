@@ -100,9 +100,9 @@ var completeGames = [
 		link: "https://play.google.com/store/apps/details?id=com.MaxwellOldt.HoppO&hl=en",
 		title: "HoppO",
 		creator: "Maxwell Odt and Brendan Raftery",
-		image: "gallery/CoverImage.png",
-		description: "Go as far as you can as a little ball who hops from circle to circle while they rotate around. Try to go farther then any of your friends can. Take your time, but don't go too slow because there is a red wall at your heels trying to get you.",
-		gif: "gallery/CoverImage.gif",
+		image: "images/games/hoppo.png",
+		description: "Play as a little blue ball who hops from circle to circle in an effort to avoid the advancing red wall of death. The game is infinite, meaning the ball will always die in the end, but you can compete with your friends to see who outlives who.",
+		gif: "images/games/hoppo.gif",
 		color: "#4DFFA6",
 		date: "SPRING 2015",
 		platforms: android		
@@ -123,7 +123,7 @@ function displayGames(list)
 	{
 		var game = list[i];
 		component = "<a href=\"{0}\" class=\"gameDescription\" id=\"{1}\">\n".format(game.link, i);
-		component = component.concat("\t<img class=\"gameImage\" src=\"{0}\" alt=\"A screenshot of {1}\"></img>\n".format(game.image, game.title));
+		component = component.concat("\t<div class=\"gameImage\"> <img src=\"{0}\" alt=\"A screenshot of {1}\"></img></div>\n".format(game.image, game.title));
 		component = component.concat("\t<span><h1>{0}</h1>&nbsp;<hr><h2>by {1}</h2>\n".format(game.title, game.creator));
 		component = component.concat("\t<p>{0}</p>\n".format(game.description));
 		component = component.concat("\t<div class=\"gameDate\">{0}</div>\n".format(game.date));
@@ -140,11 +140,11 @@ Function for attaching .hover() to an element.
 function attachHover(id)
 {
 	$("#"+id).hover(function(){
-	$("#"+id+" .gameImage").attr("src", completeGames[id].gif);
+	$("#"+id+" .gameImage").find("img").attr("src", completeGames[id].gif);
 	$(this).css("background", completeGames[id].color);
 }, function()
 {
-	$("#"+id+" .gameImage").attr("src", completeGames[id].image);
+	$("#"+id+" .gameImage").find("img").attr("src", completeGames[id].image);
 	$(this).css("background", "linear-gradient(90deg, #fff,#ddd)");
 });			
 }

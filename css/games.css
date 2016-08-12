@@ -45,13 +45,20 @@
 .gameImage{
 	display: inline;
 	float: right;
-	height: 100%;
 	width: 50%;
-	border-radius: 0em 0em 0em 0em;
-};
+	height: 100%;
+	background-color: black;
+	text-align: center;
+}
+.gameImage>img
+{
+	position: relative;
+	bottom: 20%;
+}
 
-	.gameDescription>p{
-		display: inline;
+	.gameDescription>span>p{
+		margin-left: 0%;
+		margin-right: 0%;
 	}
 	.gameDescription>span{
 		position: relative;
