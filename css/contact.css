@@ -1,0 +1,74 @@
+.alignment-table
+{
+	vertical-align: top;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+.contact-email
+{
+	text-decoration: underline;
+	color: #DE475B;
+}
+	.contact-email:hover
+	{
+		color: #EF586C;
+	}
+.contact-portrait
+{
+	display: inline-block;
+	margin: 10px;
+	vertical-align: top;
+	width: 20vw;
+}
+.contact-image
+{
+	vertical-align: top;
+	height: 170px;
+	width: 170px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	object-fit: cover;
+}
+.contact-name
+{
+	font-family: Montserrat;
+	font-size: 120%;
+	margin-bottom: 5px;	
+}
+.contact-title
+{
+	color: #aaa;
+	font-family: Montserrat;
+	font-size: 100%;
+	margin-bottom: 5px;	
+}
+.contact-status
+{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 100%;
+    margin-bottom: 3px;
+}
+
+#contact
+{
+	position: relative;
+	z-index: 1;
+}
+
+#contact-image
+{
+	background: linear-gradient(#FF3030, #000);
+	height: 10em;
+}
+#contact-content
+{
+	background-color: #fff;
+}
+#contact-header
+{
+	background-color: #DE475B;
+}
+

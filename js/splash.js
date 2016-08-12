@@ -26,15 +26,26 @@ This function includes the parallax effect on the title, and the text-shadow cha
 */
 function parallax()
 {
-	//Get how much the user has scrolled on the browser. This is a function dependent on jQuery
-	var scroll = $(document).scrollTop();
-	//Converts em (what we use in our css) to px
-    var emSize = parseFloat($("body").css("font-size"));
-	//Scale down the scroll factor by 0.4
-	$("#title").css("top", (10*emSize-scroll*0.4)+"px");
-	//Calculates the position of the text shadow with 7px as the original position
-	var txt_shadow = 7 - (scroll * 0.05);
-	$("#title").css("textShadow", Math.abs(txt_shadow)  + "px " + txt_shadow + "px 3px rgba(0, 100, 100, 1)");
+	if($(document).scrollTop() < $(window).height())
+	{
+		$("#menu-background").css("position", "absolute");		
+		$("#menu-background").css("top", "");
+		$("#menu-background").css("bottom", "0px");
+		//Get how much the user has scrolled on the browser. This is a function dependent on jQuery
+		var scroll = $(document).scrollTop();
+		//Converts em (what we use in our css) to px
+	    var emSize = parseFloat($("body").css("font-size"));
+		//Scale down the scroll factor by 0.4
+		$("#title").css("top", (10*emSize-scroll*0.4)+"px");
+		//Calculates the position of the text shadow with 7px as the original position
+		var txt_shadow = 7 - (scroll * 0.04);
+		$("#title").css("textShadow", Math.abs(txt_shadow)  + "px " + txt_shadow + "px 3px rgba(0, 100, 100, 1)");
+	}
+	else//otherwise time to move the bar
+	{
+		$("#menu-background").css("position", "fixed");
+		$("#menu-background").css("top", "0px");
+	}
 }
 
 /*
@@ -46,8 +57,15 @@ Function adds the tiles to the page
 */
 
 /*
-
+Scrolling
 */
+function scrollTo(id)
+{
+	console.log("yeah");
+	$("html, body").animate({
+		scrollTop: $(id).offset().top + (-55)
+	}, 1500);
+}
 
 /*
 Main execution of our javascript (document.ready)
@@ -56,6 +74,22 @@ $(document).ready(function()
 {
 	horizontallyCenter("#title");//okay line
 	parallax();
+$("#menu-about").click(function(){
+	scrollTo("#about");
+});
+$("#menu-games").click(function(){
+	scrollTo("#games");
+});
+$("#menu-podcasts").click(function(){
+	scrollTo("#podcasts");
+});
+$("#menu-calendar").click(function(){
+	scrollTo("#calendar");
+});
+$("#menu-contact").click(function(){
+	scrollTo("#contact");
+});
+
 });
 
 $(document).scroll(parallax);

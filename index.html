@@ -31,34 +31,155 @@
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/splash.css">
+<link rel="stylesheet" type="text/css" href="css/about.css">
+<link rel="stylesheet" type="text/css" href="css/calendar.css">
+<link rel="stylesheet" type="text/css" href="css/games.css">
+<link rel="stylesheet" type="text/css" href="css/podcasts.css">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <!--end stylesheets-->
 <!--javascript-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/splash.js"></script>
+<script src="js/games.js"></script>
 <!--end javascript-->
 </head>
 <body>
+    <div id="menu-background">
+        <ul id="menu">
+            <li id="menu-about">ABOUT</li>
+            <li id="menu-games">GAMES</li>
+            <li id="menu-podcasts">PODCASTS</li>
+            <li id="menu-calendar">CALENDAR</li>
+            <li id="menu-contact">CONTACT</li>
+        </ul>
+    </div>
 	<div id="splash">
-        <img src="img/main/minified_tower.png" alt="Purdue Bell Tower" style="width: 5%; position: absolute; top: 8em; left: 60em; z-index: 1000;">
-        <img src="img/main/minified_background.gif" alt="Background" style="width: 100%; position: absolute; top: 26em; z-index: 100;">    
-        <img src="img/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 36em; z-index: 1001;">
-        <img src="img/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 34em; z-index: 1002;">
+        <img src="images/main/minified_tower.gif" alt="Purdue Bell Tower" style="width: 5%; position: absolute; top: 8em; left: 60em; z-index: 1000;">
+        <img src="images/main/minified_background.gif" alt="Background" style="width: 100%; position: absolute; top: 26em; z-index: 100;">    
         <div id="title">Purdue Indie Game Developer's Club</div>
-        <div id="menu-background">
-            <ul id="menu">
-            	<a href="a.html"><li id="menu-about">ABOUT</li></a>
-                <a href="calendar.html"><li id="menu-calendar">CALENDAR</li></a>
-            	<a href="games.html"><li id="menu-games">GAMES</li></a>
-            	<a href="pod.html"><li id="menu-podcasts">PODCASTS</li></a>
-            	<a href="con.html"><li id="menu-contact">CONTACT</li></a>
-            </ul>
-        </div>
     </div>
     <div id="content">
         <div id="about">
-            <h1 id="about-header">TEST</h1>
+            <div class="content" id="about-content">
+                <h1 class="header" id="about-header">ABOUT THE CLUB</h1>
+                <img src="images/example_sprite.jpg" alt="sprite" class="header-sprite">
+                <hr>
+                <p>We're a small but close-knit club founded in the Spring of 2015. We're focused on helping each other learn and develop games with the hopes that our members will publish their own games.        
+                </p>
+            </div>
+            <div class="cover-image" id="about-image">
+                <img src="images/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
+                <img src="images/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
+            </div>            
         </div>
+
+        <div id="games">
+            <div class="content" id="games-content">
+                <h1 class="header" id="games-header">OUR GAMES</h1>
+                <img src="images/example_sprite.jpg" alt="sprite" class="header-sprite">
+                <hr>
+                <div class="games-button" id="completed-button">COMPLETED</div>
+                <div class="games-button" id="in-development-button">IN DEVELOPMENT</div>
+                <div id="container"></div>                
+            </div>
+            <div class="cover-image" id="games-image">
+                <img src="images/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
+                <img src="images/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
+            </div>
+        </div>
+
+        <div id="podcasts">
+            <div class="content" id="podcasts-content">
+                <h1 class="header" id="podcasts-header">PODCASTS</h1>
+                <hr>
+                <div class ="podcastList">
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/204193148&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                </div>
+            </div>
+            <div class="cover-image" id="podcasts-image">
+                <img src="images/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
+                <img src="images/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
+            </div>            
+        </div>
+
+        <div id="calendar">
+            <div class="content" id="calendar-content">
+                <h1 class="header" id="calendar-header">CALENDAR</h1>
+                <hr>
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=purdueindie%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0; display: block; margin: 0 auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="cover-image" id="calendar-image">
+                <img src="images/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
+                <img src="images/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="content" id="contact-content">
+                <h1 class="header" id="contact-header">CONTACT US</h1>
+                <img src="images/example_sprite.jpg" alt="sprite" class="header-sprite">
+                <hr>
+                <p>If you're interested in sponsoring the club, please fill out the <a class="contact-email" href="http://typeform.com">form here.</a> Otherwise, feel free to send us an e-mail at <a class="contact-email" href="mailto:purdueindie@gmail.com">purdueindie@gmail.com</a>! If there are specific officers you'd like to reach out, click on any of their portraits to go their website.</p>
+                <div class="alignment-table">
+                    <div class="contact-portrait" id="contact-president">
+                    <a href="http://charliesu.com">
+                        <img src="images/2016_officers/president.jpg" class="contact-image">
+                        <h3 class="contact-title">President</h3>
+                        <h3 class="contact-name">Charlie Su</h3>
+                        <h3 class="contact-status">Junior in Computer Science and Applied Physics</h3>
+                    </a>
+                    <a href="mailto:charliesu@purdue.edu" class="contact-email contact-status">charliesu@purdue.edu</a>
+                    </div>
+                    <div class="contact-portrait" id="contact-vice-president-a">
+                        <img src="images/2016_officers/vicePresidentA.jpg" class="contact-image">
+                        <h3 class="contact-title">Vice President</h3>
+                        <h3 class="contact-name">Brendan Raftery</h3>
+                        <h3 class="contact-status">Sophomore in Computer Science</h3>
+                        <a href="mailto:braftery@purdue.edu" class="contact-email contact-status">braftery@purdue.edu</a>
+                    </div>
+                    <div class="contact-portrait" id="contact-vice-president-b">
+                        <img src="images/2016_officers/vicePresidentB.jpg" class="contact-image">
+                        <h3 class="contact-title">Co-Vice President</h3>
+                        <h3 class="contact-name">Henry Poggie</h3>
+                        <h3 class="contact-status">Sophomore in Computer Science</h3>
+                        <a href="mailto:hpoggie@purdue.edu" class="contact-email contact-status">hpoggie@purdue.edu</a>
+                    </div>
+                    <div class="contact-portrait" id="contact-treasurer">
+                    <a href="http://nickzetzl.com">
+                        <img src="images/2016_officers/treasurer.jpg" class="contact-image">
+                        <h3 class="contact-title">Treasurer</h3>
+                        <h3 class="contact-name">Nick Zetzl</h3>
+                        <h3 class="contact-status">Junior in Computer Science</h3>
+                    </a>           
+                    <a href="mailto:nzetzl@purdue.edu" class="contact-email contact-status">nzetzl@purdue.edu</a>
+                    </div>
+                    <div class="contact-portrait" id="contact-public-relations">
+                        <img src="images/2016_officers/pr.jpg" class="contact-image">
+                        <h3 class="contact-title">Public Relations</h3>
+                        <h3 class="contact-name">Jaimie Lantern</h3>
+                        <h3 class="contact-status">Sophomore in Computer Science and Brain/Behavioral Sciences</h3>
+                        <a href="mailto:zalhadda@purdue.edu" class="contact-email contact-status">zalhadda@purdue.edu</a>                        
+                    </div>
+                    <div class="contact-portrait" id="contact-advisor">
+                    <a href="https://polytechnic.purdue.edu/profile/davewhit">
+                        <img src="images/2016_officers/advisor.jpg" class="contact-image">
+                        <h3 class="contact-title">Advisor</h3>
+                        <h3 class="contact-name">David Whittinghill</h3>
+                        <h3 class="contact-status">Professor of Computer Graphics Technology</h3>
+                    </a>
+                    <a href="mailto:dmwhittinghill@purdue.edu" class="contact-email contact-status">dmwhittinghill@purdue.edu</a>
+                    </div>
+                </div>
+                <p>If you're looking for a <em>past</em> officer, <a href="officersList.html" class="contact-email">click here.</a>
+                <br>If you want to see our website's repository, <a href="https://github.com/PurdueIndieGameDev/PurdueIndieGameDev.github.io" class="contact-email">click here.</a></p>
+            </div>
+            <div class="cover-image" id="contact-image">
+                <img src="images/main/bridge.gif" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
+                <img src="images/main/foreground.gif" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

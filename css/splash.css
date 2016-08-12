@@ -3,19 +3,6 @@ hr
     width: 100%;
 }
 
-html
-{
-	background: linear-gradient(#5BD1E3, #fff);/*#293E62,#FFF*/
-	/*background: linear-gradient(#293e62, #FFF);*/
-	background-attachment: fixed;
-	background-repeat: none;	
-}
-
-#content
-{
-	background-color: #EBEBEB;
-	z-index: 9000;
-}
 #home
 {
 	width: 1.5em;
@@ -51,6 +38,7 @@ html
 	padding-bottom: 0.7em;
 	text-align: center;
 	width: 7em;
+	cursor: pointer;
 }
 
 #menu-background
@@ -58,7 +46,7 @@ html
 	z-index: 2000;
 	height: 3.5em;
 	position: absolute;
-	bottom: 0px;
+	top: calc(100vh - 3.5em);
 	width: 100%;
 	background-color: #EBEBEB;
 }
@@ -85,10 +73,16 @@ html
 
 #splash
 {
+	z-index: 1;
 	height: 100vh;
 	overflow: hidden;
-	width: 100vh;
 	margin: 0;
+	position: relative;/*required for overflow:hidden to work...*/
+	background: linear-gradient(#5BD1E3, #fff);/*#293E62,#FFF*/
+	/*background: linear-gradient(#293e62, #FFF);*/
+	background-attachment: fixed;
+	background-repeat: none;	
+
 }
 
 #title

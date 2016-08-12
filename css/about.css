@@ -1,0 +1,17 @@
+#about
+{
+	position: relative;
+	z-index: 1;
+}
+#about-image
+{
+	background: linear-gradient(#293e62, #FFF);
+}
+#about-content
+{
+	background-color: #fff;
+}
+#about-header
+{
+	background-color: #57C4E6;
+}

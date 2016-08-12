@@ -2,10 +2,6 @@
         font-family: eightBit;
         src: url("../fonts/8-BIT WONDER.TTF");
 }
-@font-face {
-		font-family: coneriaScript;
-		src: url("../fonts/Demo_ConeriaScript.ttf");
-}
 ::selection {
   background: #48C6F0; /* WebKit/Blink Browsers */
 }
@@ -21,9 +17,8 @@ a
 }
 	a:visited
 	{
-		color: black;
 	}
-	a:hover
+	a:not(.contact-portrait>a):hover
 	{
 		color: white;
 	}
@@ -35,41 +30,39 @@ div
 
 h1
 {
-    font-family: coneriaScript;
-    font-size: 2.5em;
+    font-size: 1.7em;
     text-align: center;
     margin: auto;
-    margin-top: .5em;
 }
 
 h2 
 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     margin: auto;
-    margin-top: 2em;
 }
 
 h3
 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     margin: auto;
-    margin-top: 1em;
-    margin-bottom: .5em;
 }
 
 html 
 {
+    position: relative;
     overflow-x: hidden;
 }
 
 p
 {
-    width: 90%;
-    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: left;
+    padding: 10px;
     margin-right: 5%;
     margin-left: 5%;
+    line-height: 150%;
 }
 
 table {
@@ -116,6 +109,37 @@ ul
     width: 5em;
 }
 
+.content
+{
+    position: relative;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;   
+    padding-bottom: 40px;
+}
+.cover-image
+{
+    position: relative;
+    overflow: hidden;
+    height: 5em;
+    margin: 0;
+}
+.header
+{
+    display: inline-block;
+    font-family: Montserrat;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+.header-sprite
+{
+    display: inline-block;
+    height: 3em;
+    margin-left: 1px;
+}
+
 .contactLogos:hover 
 {
     fill: dodgerblue;
@@ -156,11 +180,10 @@ ul
 
 #content
 {
+    position: relative;
+    z-index: 2;
     margin: 0;
-    z-index: 2000;
     width: 100%;
-    height: 100%;
-    background-color: #ccc;
 }
 
 #doubleTitleBar

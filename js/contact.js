@@ -2,8 +2,9 @@
 This js file is for the #Contact section of the page.
 */
 
-/*global $, jQuery, alert*/
 
+
+/*global $, jQuery, alert*/
 $(document).ready(function () {
     "use strict";
     $("p.question").click(function () {
@@ -113,3 +114,8 @@ var pastOfficers = [
 		}
 	}
 ];
+
+function generatePortraits(list)
+{
+	
+}
