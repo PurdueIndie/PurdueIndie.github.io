@@ -64,15 +64,17 @@ var inDevelopmentGames = [
 		image: "image.jpg",
 		description: "This is an example description. Descriptions should describe game, but shouldn't be too long...",
 		gif: "gif.gif",
-		color: "#FFF"
+		color: "#FFF",
+		date: "FALL 2016",
+		platforms: linux.concat(apple).concat(windows)
 	}
 ];
 
 /*
-Array holding the list of complete games.
+Array holding the list of completed games.
 The key is a string (usually the game's title), the value is an object with descriptions of the game.
 */
-var completeGames = [
+var completedGames = [
 	{
 		link: "https://github.com/DontSuCharlie/Legacy_Dungeon",
 		title: "Legacy Dungeon",
@@ -80,7 +82,7 @@ var completeGames = [
 		image: "images/games/legacy_dungeon.png",
 		description: "A game developed during high school. You can move, collect coins, kill monsters, and go down floors. Sometimes the skills you use can kill you. You need Java installed on your computer in order to compile and run this.",
 		gif: "images/games/legacy_dungeon.gif",
-		color: "#DFB755",
+		color: "#EB9F26",
 		date: "SUMMER 2014",
 		platforms: windows
 	},
@@ -126,7 +128,7 @@ function displayGames(list)
 Function that attaches the click events for showing the list
 */
 var devClicked = false;
-var completeClicked = false;
+var completedClicked = false;
 function attachClick()
 {
 	$("#in-development-button").click(function()
@@ -134,17 +136,17 @@ function attachClick()
 		if(!devClicked)
 		{
 			devClicked = true;
-			completeClicked = false;
+			completedClicked = false;
 			displayGames(inDevelopmentGames);
-			//appending hover functions to all complete games
+			//appending hover functions to all completed games
 			for(var i = 0; i < inDevelopmentGames.length; i++)
 				attachHover(inDevelopmentGames, i);
 			$("#in-development-button").css("top", "5px");
 			$("#in-development-button").css("border-bottom-width", "0px");
 			$("#in-development-button").css("background-color", "#FFCC26");
-			$("#complete-button").css("top", "0px");
-			$("#complete-button").css("border-bottom-width", "5px");
-			$("#complete-button").css("background-color", "#EBEBEB");			
+			$("#completed-button").css("top", "0px");
+			$("#completed-button").css("border-bottom-width", "5px");
+			$("#completed-button").css("background-color", "#EBEBEB");			
 		}
 		else
 		{
@@ -155,30 +157,30 @@ function attachClick()
 			$("#in-development-button").css("background-color", "#EBEBEB");
 		}
 	});
-	$("#complete-button").click(function()
+	$("#completed-button").click(function()
 	{
-		if(!completeClicked)
+		if(!completedClicked)
 		{
-			completeClicked = true;
+			completedClicked = true;
 			devClicked = false;			
-			displayGames(completeGames);
-			//appending hover functions to all complete games
-			for(var i = 0; i < completeGames.length; i++)
-				attachHover(completeGames, i);
-			$("#complete-button").css("top", "5px");
-			$("#complete-button").css("border-bottom-width", "0px");
-			$("#complete-button").css("background-color", "#FFCC26");
+			displayGames(completedGames);
+			//appending hover functions to all completed games
+			for(var i = 0; i < completedGames.length; i++)
+				attachHover(completedGames, i);
+			$("#completed-button").css("top", "5px");
+			$("#completed-button").css("border-bottom-width", "0px");
+			$("#completed-button").css("background-color", "#FFCC26");
 			$("#in-development-button").css("top", "0px");
 			$("#in-development-button").css("border-bottom-width", "5px");
 			$("#in-development-button").css("background-color", "#EBEBEB");			
 		}
 		else
 		{
-			completeClicked = false;
+			completedClicked = false;
 			$("#container").empty();
-			$("#complete-button").css("top", "0px");
-			$("#complete-button").css("border-bottom-width", "5px");
-			$("#complete-button").css("background-color", "#EBEBEB");
+			$("#completed-button").css("top", "0px");
+			$("#completed-button").css("border-bottom-width", "5px");
+			$("#completed-button").css("background-color", "#EBEBEB");
 		}
 	});
 }
@@ -202,13 +204,13 @@ function attachHover(list, id)
 $(document).ready(function()
 	{
 		attachClick();
-		completeClicked = true;
-		displayGames(completeGames);
-		//appending hover functions to all complete games
-		for(var i = 0; i < completeGames.length; i++)
-			attachHover(completeGames, i);
-		$("#complete-button").css("top", "5px");
-		$("#complete-button").css("border-bottom-width", "0px");
-		$("#complete-button").css("background-color", "#FFCC26");		
+		completedClicked = true;
+		displayGames(completedGames);
+		//appending hover functions to all completed games
+		for(var i = 0; i < completedGames.length; i++)
+			attachHover(completedGames, i);
+		$("#completed-button").css("top", "5px");
+		$("#completed-button").css("border-bottom-width", "0px");
+		$("#completed-button").css("background-color", "#FFCC26");		
 	}
 );
