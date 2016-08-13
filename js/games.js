@@ -76,7 +76,7 @@ Array holding the list of completed games.
 The key is a string (usually the game's title), the value is an object with descriptions of the game.
 */
 var completedGames = [
-	{
+	/*{
 		link: "https://github.com/DontSuCharlie/Legacy_Dungeon",
 		title: "Legacy Dungeon",
 		creator: "Charlie Su and Anish Kannan",
@@ -86,7 +86,7 @@ var completedGames = [
 		color: "#EB9F26",
 		date: "SUMMER 2014",
 		platforms: windows
-	},
+	},*/
 	{
 		link: "https://play.google.com/store/apps/details?id=com.MaxwellOldt.HoppO&hl=en",
 		title: "HoppO",

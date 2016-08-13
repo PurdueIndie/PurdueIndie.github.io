@@ -30,14 +30,10 @@ hr
 	position: relative;
 	right: 100%;
 	display: inline;
-	background-color: #EBEBEB;
-	height: 1em;
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 0.7em;
 	padding-bottom: 0.7em;
-	text-align: center;
-	width: 7em;
 	cursor: pointer;
 }
 
@@ -82,7 +78,7 @@ hr
 	background-size: 100vw 90vh;
 	/*background: linear-gradient(#5BD1E3, #fff);#293E62,#FFF*/
 	/*background: linear-gradient(#293e62, #FFF);*/
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	background-repeat: none;	
 
 }

@@ -8,13 +8,11 @@ Some of the functions include:
 
 */
 
-
 /*
 This function centers things.
 */
 function horizontallyCenter(thingYouWantToCenter)
 {
-	console.log("centered");
 	var pos = (($(window).width() - parseFloat($(thingYouWantToCenter).css("width")))/2);
 	console.log(pos);
 	$(thingYouWantToCenter).css("left", pos + "px");
@@ -27,7 +25,7 @@ This function includes the parallax effect on the title, and the text-shadow cha
 var isAtTop = true;
 function parallax()
 {
-	if($(document).scrollTop() < $(window).height())
+	if(($(document).scrollTop() * 1.10) < $(window).height())
 	{
 		if(!isAtTop)
 		{
@@ -35,15 +33,14 @@ function parallax()
 			$("#menu-background").css("top", "");
 			$("#menu-background").css("bottom", "0px");
 			isAtTop = true;
-			console.log("top?");
 		}
 		//Get how much the user has scrolled on the browser. This is a function dependent on jQuery
 		var scroll = $(document).scrollTop();
 		//Converts em (what we use in our css) to px
-	    var emSize = parseFloat($("body").css("font-size"));
+		var emSize = parseFloat($("body").css("font-size"));
 		//Scale down the scroll factor by 0.4
-		$("#title").css("transform", "translateY(" + (10*emSize-scroll*0.4)) + "px)";
-		//$("#title").css("top",(10*emSize-scroll*0.4) +"px");
+		//$("#title").css("transform", "translateY(" + (10*emSize-scroll*0.4) + "px)");
+		$("#title").css("top",(10*emSize-scroll*0.4) +"px");
 		//Calculates the position of the text shadow with 7px as the original position
 		var txt_shadow = 7 - (scroll * 0.04);
 		$("#title").css("textShadow", Math.abs(txt_shadow)  + "px " + txt_shadow + "px 3px rgba(0, 100, 100, 1)");
@@ -52,7 +49,6 @@ function parallax()
 	{
 		if(isAtTop)
 		{
-			console.log("bottom?");
 			$("#menu-background").css("position", "fixed");
 			$("#menu-background").css("top", "0px");
 			isAtTop = false;
@@ -73,7 +69,6 @@ Scrolling
 */
 function scrollTo(id)
 {
-	console.log("yeah");
 	$("html, body").animate({
 		scrollTop: $(id).offset().top + (-55)
 	}, 1500);
