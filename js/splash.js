@@ -39,11 +39,11 @@ function parallax()
 		//Converts em (what we use in our css) to px
 		var emSize = parseFloat($("body").css("font-size"));
 		//Scale down the scroll factor by 0.4
-		//$("#title").css("transform", "translateY(" + (10*emSize-scroll*0.4) + "px)");
-		$("#title").css("top",(10*emSize-scroll*0.4) +"px");
+		//$("#title").css("transform", "translateY(" + (-9*emSize-scroll*0.4) + "px)");
+		//$("#title").css("top",(10*emSize-scroll*0.4) +"px");
 		//Calculates the position of the text shadow with 7px as the original position
-		var txt_shadow = 7 - (scroll * 0.04);
-		$("#title").css("textShadow", Math.abs(txt_shadow)  + "px " + txt_shadow + "px 3px rgba(0, 100, 100, 1)");
+		//var txt_shadow = 7 - (scroll * 0.04);
+		//$("#title").css("textShadow", Math.abs(txt_shadow)  + "px " + txt_shadow + "px 3px rgba(0, 100, 100, 1)");
 	}
 	else//otherwise time to move the bar
 	{
@@ -79,29 +79,31 @@ Main execution of our javascript (document.ready)
 */
 $(document).ready(function()
 {
-	horizontallyCenter("#title");//okay line
 	parallax();
-$("#menu-about").click(function(){
-	scrollTo("#about");
-});
-$("#menu-games").click(function(){
-	scrollTo("#games");
-});
-$("#menu-podcasts").click(function(){
-	scrollTo("#podcasts");
-});
-$("#menu-calendar").click(function(){
-	scrollTo("#calendar");
-});
-$("#menu-contact").click(function(){
-	scrollTo("#contact");
-});
-
+	$("#menu-about").click(function(){
+		scrollTo("#about");
+	});
+	$("#menu-games").click(function(){
+		scrollTo("#games");
+	});
+	$("#menu-podcasts").click(function(){
+		scrollTo("#podcasts");
+	});
+	$("#menu-calendar").click(function(){
+		scrollTo("#calendar");
+	});
+	$("#menu-contact").click(function(){
+		scrollTo("#contact");
+	});
+	$("#find-officer").click(function(){
+		scrollTo("#contact");
+	})
 });
 
 $(document).scroll(parallax);
 
+/*
 $(window).resize(function()
 {
 	horizontallyCenter("#title");
-});
+});*/
