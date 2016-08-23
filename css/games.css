@@ -2,7 +2,7 @@
 {
 	position: relative;
 	background-color: #EBEBEB;
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	display: inline-block;
 	font-size: 150%;
 	padding: 15px;
@@ -23,7 +23,7 @@
 		border-bottom-width: 0px;
 	}
 
-.gameDescription{
+.gameCard{
 	position: relative;
 	background: linear-gradient(60deg, #fff,#ddd);
 	color: black;
@@ -38,22 +38,23 @@
 	border-color: #444;
 	border-bottom-width: 10px;
 }
-.gameDescription:active
+.gameCard:active
 {
 	position: relative;
 	top: 10px;
 	border-color: #fff;
 }
-.gameImage{
+.gameCardImage{
 	position: relative;
 	display: inline;
 	float: right;
-	width: 50%;
+	max-width: 50%;
+	min-width: 50%;
 	height: 100%;
 	background-color: black;
 	text-align: center;
 }
-.gameImage>img
+.gameCardImage>img
 {
 	position: absolute;
 	top: 0;
@@ -63,11 +64,11 @@
 	margin: auto;
 }
 
-	.gameDescription>span>p{
+	.gameCard>span>p{
 		margin-left: 0%;
 		margin-right: 0%;
 	}
-	.gameDescription>span{
+	.gameCard>span{
 		position: relative;
 		display: inline-block;
 		float: left;
@@ -75,10 +76,10 @@
 		line-height: 1.2em;
 		padding-top: 2em;
 		padding-left: 1em;	
-		width: 48%;	
+		max-width: calc(50% - 1em);
 		height: 18em;
 	}
-	.gameDescription>span>h1{
+	.gameCard>span>h1{
 		display: inline-block;
 		font-family: Montserrat, sans-serif;
 		padding: 10px;
@@ -88,17 +89,18 @@
 		right: 50px;
 		font-size: 150%;
 	}
-	.gameDescription>span>h2{
+	.gameCard>span>h2{
 		padding-bottom: 0.5em;
 		display: block;
 		font-family: Montserrat, sans-serif;
 		font-size: 120%;
+		text-align: center;
 	}
-.gamePlatforms>img{
+.gameCardPlatforms>img{
 	width: 36px;
 	height: 36px;
 }
-.gamePlatforms
+.gameCardPlatforms
 {
 	position: absolute;
 	right: 0px;
@@ -106,13 +108,13 @@
 }
 .gameDate
 {
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	position: absolute;
 	left: 5px;
 	bottom: 5px;
 }
 
-#container
+#list-of-games
 {
 	margin-top: 20px;
 	border-style: solid;
