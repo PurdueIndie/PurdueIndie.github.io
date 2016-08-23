@@ -29,20 +29,21 @@
 <!--end meta data-->
 <!--stylesheets & fonts-->
 <link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--
+<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+
 <link rel="stylesheet" type="text/css" href="css/content.css">
 <link rel="stylesheet" type="text/css" href="css/splash.css">
 <link rel="stylesheet" type="text/css" href="css/about.css">
 <link rel="stylesheet" type="text/css" href="css/calendar.css">
 <link rel="stylesheet" type="text/css" href="css/games.css">
 <link rel="stylesheet" type="text/css" href="css/podcasts.css">
-<link rel="stylesheet" type="text/css" href="css/contact.css">-->
+<link rel="stylesheet" type="text/css" href="css/contact.css">
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <!--end stylesheets-->
 <!--javascript-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/splash.js"></script>
+<script src="js/about.js"></script>
 <script src="js/games.js"></script>
 <!--end javascript-->
 </head>
@@ -57,8 +58,8 @@
         </ul>
     </div>
 	<div id="splash">
-        <img src="images/splash/bell_tower.png" alt="Purdue Bell Tower" style="width: 5%; position: absolute; top: 8em; left: 60em; z-index: 1000;">
-        <img src="images/splash/hills.png" alt="Background" style="width: 100%; position: absolute; top: 26em; z-index: 100;">    
+        <img src="images/splash/bell_tower.png" alt="Purdue Bell Tower" style="width: auto; position: absolute;max-height: 80vh; top: calc(20vh - 3.5em); left: 80vw; z-index: 1000;">
+        <img src="images/splash/hills.png" alt="Background" style="width: 100%; min-height: 100px;position: absolute; top: calc(100vh - 3.5em - 100px); z-index: 100;">
         <div id="title">Purdue Indie Game Developer's Club</div>
     </div>
     <div id="content">
@@ -66,9 +67,35 @@
             <div class="content" id="about-content">
                 <h1 class="header" id="about-header">ABOUT THE CLUB</h1>
                 <img src="images/example_sprite.jpg" alt="sprite" class="header-sprite">
-                <hr>
+                <hr><br>
                 <p>We're a small but close-knit club founded in the Spring of 2015. We're focused on helping each other learn and develop games with the hopes that our members will publish their own games.        
                 </p>
+                <div class="card-table" id="faq"></div>
+                <!--<br>
+                <h2>Who can join?</h2>
+                <hr>
+                <p>If you're a Purdue student or affiliated with Purdue (staff, faculty, etc.), you can join our club!</p>
+                <br>
+
+                <h2>Where and when does the club meet?</h2>
+                <hr>
+                <p>As of Spring 2016, every Thursday and Saturday from 6:00pm - 8:00pm in Room B155 of the Lawson Computer Science Building.</p>
+                <br>
+                
+                <h2>What makes you different from other game development clubs on campus? (for example, ACM's SIGGD?)</h2>
+                <hr>
+                <p>The <a style="color: #46B3D5; text-decoration: underline;" href="acm.github.io">other game development club</a> works on 1 project every semester together as a team. This club is just a place where you can work on your own projects at your own pace with other people.</p>
+                <br>
+
+                <h2>Are there club dues?</h2>
+                <hr>
+                <p>Yes. They are $5 per semester.</p>
+                <br>
+
+                <h2>I'm from another game development club and want to collaborate for an event!</h2>
+                <hr>
+                <p>Awesome! Just find <span id="find-officer" href="index.html#contact">any of the officers</span> or just <a style="color: #46B3D5; text-decoration: underline;" href="mailto:purdueindie@gmail.com">e-mail</a> our primary e-mail and we can get started!</p>-->
+
             </div>
             <div class="cover-image" id="about-image">
                 <img src="images/splash/bridge.png" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
@@ -83,7 +110,7 @@
                 <hr>
                 <div class="games-button" id="completed-button">COMPLETED</div>
                 <div class="games-button" id="in-development-button">IN DEVELOPMENT</div>
-                <div id="container"></div>                
+                <div id="list-of-games"></div>                
             </div>
             <div class="cover-image" id="games-image">
                 <img src="images/splash/bridge.png" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">

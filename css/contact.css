@@ -34,14 +34,14 @@
 }
 .contact-name
 {
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	font-size: 120%;
 	margin-bottom: 5px;	
 }
 .contact-title
 {
-	color: #aaa;
-	font-family: Montserrat;
+	color: #999;
+	font-family: Montserrat, sans-serif;
 	font-size: 100%;
 	margin-bottom: 5px;	
 }
