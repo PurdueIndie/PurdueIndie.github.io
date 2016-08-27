@@ -94,7 +94,7 @@ function cardConstructor(faq_list)
 
 function attachClickToFAQ(id)
 {
-	$("#q" + id).css("animation-delay", "0." + id + "s");
+	$("#q" + id).css("animation-delay", id%3 + id%2 + "." + id + "s");
 	$("#q" + id).click(function(){
 		//3D transform
 		//console.log($("#q"+id).css("display", "none"));

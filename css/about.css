@@ -1,9 +1,15 @@
 @keyframes wiggle
 {
 	0%	{transform: rotateZ(1deg);}
-	25%	{transform: rotateZ(-1deg);}
-	50%	{transform: rotateZ(0deg);}
-	75%	{transform: rotateZ(0deg);}
+	10%	{transform: rotateZ(-1deg);}
+	20%	{transform: rotateZ(0deg);}
+	30%	{transform: rotateZ(0deg);}
+	40%{transform: rotateZ(0deg);}
+	50%{transform: rotateZ(0deg);}
+	60%{transform: rotateZ(0deg);}
+	70%{transform: rotateZ(0deg);}
+	80%{transform: rotateZ(0deg);}
+	90%{transform: rotateZ(0deg);}
 	100%{transform: rotateZ(0deg);}
 }
 
@@ -23,7 +29,7 @@
 .question-card
 {
 	animation-name: wiggle;
-	animation-duration: 2s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	vertical-align: top;
 	position: relative;
