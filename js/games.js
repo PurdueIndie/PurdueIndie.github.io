@@ -45,6 +45,50 @@ var inDevelopmentGames = [
 		date: "FALL 2016",
 		platforms: linux.concat(apple).concat(windows)
 	}*/
+	{
+		link: "404error",
+		title: "Adventure to Indigo Road (temp name)",
+		creator: "Wesley Shin",
+		image: "image.jpg",
+		description: "Description to be posted later.",
+		gif: "gif.gif",
+		color: "#FFF",
+		date: "STARTED SPRING 2016",
+		platforms: windows
+	},
+	{
+		link: "404error",
+		title: "Overlord (temp name)",
+		creator: "Henry Poggie",
+		image: "image.jpg",
+		description: "Description to be posted later.",
+		gif: "gif.gif",
+		color: "#FFF",
+		date: "STARTED SPRING 2016",
+		platforms: linux		
+	},
+	{
+		link: "404error",
+		title: "Rogue Adventure (temp name)",
+		creator: "Brendan Raftery",
+		image: "image.jpg",
+		description: "Description to be posted later.",
+		gif: "gif.gif",
+		color: "#FFF",
+		date: "STARTED SPRING 2016",
+		platforms: linux		
+	},
+	{
+		link: "404error",
+		title: "Legacy Dungeon (temp name)",
+		creator: "Charlie Su",
+		image: "image.jpg",
+		description: "Description to be posted later.",
+		gif: "gif.gif",
+		color: "#FFF",
+		date: "STARTED SPRING 2016",
+		platforms: linux		
+	}	
 ];
 
 /*
