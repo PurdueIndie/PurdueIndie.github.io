@@ -103,7 +103,8 @@ $(document).ready(function()
 	})
 });
 
-$(document).scroll(parallax);
+if($("#menu").css("display") != "none")
+	$(document).scroll(parallax);
 
 /*
 $(window).resize(function()
