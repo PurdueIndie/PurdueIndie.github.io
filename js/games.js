@@ -114,22 +114,21 @@ var completedGames = [
 		image: "images/games/the_runner.png",
 		description: "Run through the neon catacombs and collect as many points as you can. Collect power ups to make your run even more successful and stay on your toes as the speed picks up dramatically as you get farther down the track.",
 		gif: "images/games/the_runner.gif",
-		color: "#0A39F7",
-		text: "#aaa",
+		color: "#4d11ff",
+		text: "#fff",
 		date: "SUMMER 2015",
-		platforms: windows		
+		platforms: windows
 	},
 	{
-		link: "http://gamejolt.com/games/the-runner/80654",
+		link: "https://hobofreddy55.itch.io/firates-alpha-gamejam-build",
 		title: "Firates!",
 		creator: "Jacob Dunbar",
 		image: "images/games/firates.png",
-		description: "Firates! is a 2D platformer made for the Game Jam Insanity Jam 4. It was made using Unity2D and C# scripting.",
+		description: "Firates! is a 2D platformer made for the Game Jam Insanity Jam 4 with the Unity Game Engine. Play as a pirate killing other pirates, or once you get near the end, do some fun, goofy pirate gymnastics.",
 		gif: "images/games/firates.gif",
-		color: "#0A39F7",
-		text: "#aaa",
+		color: "#FF7654",
 		date: "SUMMER 2015",
-		platforms: windows		
+		platforms: linux.concat(apple).concat(windows)
 	},	
 	{
 		link: "https://play.google.com/store/apps/details?id=com.MaxwellOldt.HoppO&hl=en",

@@ -76,6 +76,7 @@
 		line-height: 1.2em;
 		padding-top: 2em;
 		padding-left: 1em;	
+		min-width: calc(50% - 1em);
 		max-width: calc(50% - 1em);
 		height: 18em;
 	}
