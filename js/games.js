@@ -66,7 +66,7 @@ var completedGames = [
 	{
 		link: "https://play.google.com/store/apps/details?id=com.MaxwellOldt.HoppO&hl=en",
 		title: "HoppO",
-		creator: "Maxwell Odt and Brendan Raftery",
+		creator: "Maxwell Oldt and Brendan Raftery",
 		image: "images/games/hoppo.png",
 		description: "Play as a little blue ball who hops from circle to circle in an effort to avoid the advancing red wall of death. The game is infinite, meaning the ball will always die in the end, but you can compete with your friends to see who outlives who.",
 		gif: "images/games/hoppo.gif",

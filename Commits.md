@@ -11,3 +11,7 @@
 10. Made name changes to make it more understandable (gameDescription -> gameCard; container -> list-of-games)
 11. Stylized question cards.
 12. Fixed the shitty questions/answers so they no longer shitty
+
+#8/26/2016 (Fixes before lots of people view the site)
+1. Updated Jaimie's major to Biology
+2. Fix Maxwell Oldt's typoed name
