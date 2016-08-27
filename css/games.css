@@ -126,8 +126,8 @@
 
 #games
 {
-	background: linear-gradient(#FFCF30, #FF6130);	
-	position: relative;
+/*	background: linear-gradient(#FFCF30, #FF6130);
+*/	position: relative;
 	z-index: 1;
 }
 #games-image
@@ -136,8 +136,8 @@
 }
 #games-content
 {
-	background-color: #fff;
-}
+/*	background-color: #fff;
+*/}
 #games-header
 {
 	background-color: #FFCC26;

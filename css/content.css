@@ -179,7 +179,9 @@ ul
     z-index: 2;
     margin: 0;
     width: 100%;
-}
+    background-color: white;
+/*    background: linear-gradient(#97b6c8, #19445d);
+*/}
 
 #doubleTitleBar
 {

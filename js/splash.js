@@ -69,9 +69,10 @@ Scrolling
 */
 function scrollTo(id)
 {
+	$("html, body").stop(true, false);
 	$("html, body").animate({
 		scrollTop: $(id).offset().top + (-55)
-	}, 1500);
+	}, 500);
 }
 
 /*

@@ -13,5 +13,13 @@
 12. Fixed the shitty questions/answers so they no longer shitty
 
 #8/26/2016 (Fixes before lots of people view the site)
+Part 1
 1. Updated Jaimie's major to Biology
 2. Fix Maxwell Oldt's typoed name
+
+Part 2
+1. Added Brendan's art to splash page (currently has issues with scaling..)
+2. Increased speed of scroll (from 1500ms to 500ms)
+3. Made it so that clicking on all buttons on the menu doesn't make you scroll to every part before it stops scrolling (with the jQuery .stop() function, which can empty the animation queue)
+4. Added Henry's website to his profile
+5. Updated Brendan's profile picture to the one he wants
