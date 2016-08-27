@@ -1,7 +1,18 @@
-@keyframe wiggle
+@keyframes wiggle
 {
-	
+	0%	{transform: rotateZ(1deg);}
+	25%	{transform: rotateZ(-1deg);}
+	50%	{transform: rotateZ(0deg);}
+	75%	{transform: rotateZ(0deg);}
+	100%{transform: rotateZ(0deg);}
 }
+
+@keyframes flip
+{
+	0%	{transform: rotateX(0deg);}
+	100%{transform: rotateX(360deg);}	
+}
+
 .card-table
 {
 	float: bottom;
@@ -11,6 +22,9 @@
 }
 .question-card
 {
+	animation-name: wiggle;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
 	vertical-align: top;
 	position: relative;
 	display: inline-block;

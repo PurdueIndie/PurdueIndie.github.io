@@ -85,20 +85,28 @@ function cardConstructor(faq_list)
 	}
 }
 
-/*
-
-
-function attachClick()
+function attachClickToFAQ(id)
 {
-	$("q" + id).click(function(){
+	$("#q" + id).css("animation-delay", "0." + id + "s");
+	$("#q" + id).click(function(){
 		//3D transform
+		//console.log($("#q"+id).css("display", "none"));
+		$("#q" + id).css("animation-name", "flip");
+		$("#q" + id).css("animation-duration", "1s");
+		$("#q" + id).css("animation-iteration-count", "1");
 		//and alternate between question-card and answer-card classes in one animation sequence
-
+		setTimeout(function()
+			{
+				$("#q" + id).html(faq[id].answer)
+		}, 500);
+		console.log("this" + id);
 	});
-}*/
+}
 
 //Execute
 $(document).ready(function()
 	{
 		cardConstructor(faq);
+		for(var i = 0; i < faq.length; i++)
+			attachClickToFAQ(i);
 	});

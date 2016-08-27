@@ -28,8 +28,10 @@ Part 3
 1. Added mo4r parallax
 2. Changed bottom to clouds (we should change this later)
 
+#8/27/2016 (Fixes before lots of people view the site)
+1. Fixed splash page, about, and contact us for mobile
+
 To do:
-1. Fix mobile
 2. Resize game cards
-3. Update all the content-images to be smaller
-4. Add Wesley and Henry's games
+4. Add Wesley, Henry, and Jacob's games
+5. Fix speed of Hoppo
