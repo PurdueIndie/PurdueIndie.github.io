@@ -22,6 +22,7 @@
 }
 .question-card
 {
+	overflow: scroll;
 	animation-name: wiggle;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
