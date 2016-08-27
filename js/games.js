@@ -64,6 +64,30 @@ var completedGames = [
 		platforms: windows
 	},*/
 	{
+		link: "http://gamejolt.com/games/the-runner/80654",
+		title: "The Runner",
+		creator: "Brendan Raftery",
+		image: "images/games/the_runner.png",
+		description: "Run through the neon catacombs and collect as many points as you can. Collect power ups to make your run even more successful and stay on your toes as the speed picks up dramatically as you get farther down the track.",
+		gif: "images/games/the_runner.gif",
+		color: "#0A39F7",
+		text: "#aaa",
+		date: "SUMMER 2015",
+		platforms: windows		
+	},
+	{
+		link: "http://gamejolt.com/games/the-runner/80654",
+		title: "Firates!",
+		creator: "Jacob Dunbar",
+		image: "images/games/firates.png",
+		description: "Firates! is a 2D platformer made for the Game Jam Insanity Jam 4. It was made using Unity2D and C# scripting.",
+		gif: "images/games/firates.gif",
+		color: "#0A39F7",
+		text: "#aaa",
+		date: "SUMMER 2015",
+		platforms: windows		
+	},	
+	{
 		link: "https://play.google.com/store/apps/details?id=com.MaxwellOldt.HoppO&hl=en",
 		title: "HoppO",
 		creator: "Maxwell Oldt and Brendan Raftery",
@@ -194,10 +218,14 @@ function attachHover(list, id)
 	$("#g"+id).hover(function(){
 	$("#g"+id+" .gameCardImage").find("img").attr("src", list[id].gif);
 	$(this).css("background", list[id].color);
+	if(list[id].text != null)
+		$(this).css("color", list[id].text);
 }, function()
 {
 	$("#g"+id+" .gameCardImage").find("img").attr("src", list[id].image);
 	$(this).css("background", "linear-gradient(90deg, #fff,#ddd)");
+	if(list[id].text != null)
+		$(this).css("color", "black");
 });			
 }
 
