@@ -62,13 +62,13 @@
 {
 	overflow: visible;
 	background-color: white;
-	padding-top: 200px;
 }
 	#contact-image>img/*for the cloud at bottom*/
 	{
+		background-color: white;
 		width: 100vw;
 		position: absolute;
-		top: -350px;
+		top: -300px;
 		z-index: 300;
 		image-rendering: pixelated;	
 	}

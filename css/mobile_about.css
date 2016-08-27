@@ -17,7 +17,7 @@
 	font-family: Montserrat, sans-serif;
 	background-color: #57C4E6;
 	color: white;
-	font-size: 250%;
+	font-size: 200%;
 	min-width: 9em;
 	max-width: 9em;
 	min-height: 10.6em;
@@ -52,8 +52,8 @@
 }
 #about-image
 {
-	background: linear-gradient(#293e62, #FFF);
-}
+/*	background: linear-gradient(#293e62, #FFF);
+*/}
 #about-content
 {
 /*	background-color: #fff;
