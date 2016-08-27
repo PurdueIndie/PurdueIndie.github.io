@@ -1,0 +1,148 @@
+.games-button
+{
+	position: relative;
+	background-color: #EBEBEB;
+	font-family: Montserrat, sans-serif;
+	display: inline-block;
+	font-size: 150%;
+	padding: 15px;
+	border-style: solid;
+	border-color: #333;
+	border-bottom-width: 5px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+	.games-button:hover
+	{
+		background-color: #FAFAFA;
+		cursor: pointer;
+	}
+	.games-button:active
+	{
+		top: 5px;
+		border-bottom-width: 0px;
+	}
+
+.gameCard{
+	position: relative;
+	background: linear-gradient(60deg, #fff,#ddd);
+	color: black;
+	display: block;
+	font-family: Arial, sans-serif;
+	height: 20em;
+	margin-bottom: 1em;
+	width: 100%;
+	text-decoration: none;
+	overflow: hidden;
+	border-style: solid;
+	border-color: #444;
+	border-bottom-width: 10px;
+}
+.gameCard:active
+{
+	position: relative;
+	top: 10px;
+	border-color: #fff;
+}
+.gameCardImage{
+	position: relative;
+	display: inline;
+	float: right;
+	max-width: 50%;
+	min-width: 50%;
+	height: 100%;
+	background-color: black;
+	text-align: center;
+}
+.gameCardImage>img
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+	.gameCard>span>p{
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	.gameCard>span{
+		position: relative;
+		display: inline-block;
+		float: left;
+		margin: 0;
+		line-height: 1.2em;
+		padding-top: 2em;
+		padding-left: 1em;	
+		max-width: calc(50% - 1em);
+		height: 18em;
+	}
+	.gameCard>span>h1{
+		display: inline-block;
+		font-family: Montserrat, sans-serif;
+		padding: 10px;
+		border-left-style: solid;
+		border-left-width: 50px;
+		position: relative;
+		right: 50px;
+		font-size: 150%;
+	}
+	.gameCard>span>h2{
+		padding-bottom: 0.5em;
+		display: block;
+		font-family: Montserrat, sans-serif;
+		font-size: 120%;
+		text-align: center;
+	}
+.gameCardPlatforms>img{
+	width: 36px;
+	height: 36px;
+}
+.gameCardPlatforms
+{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.gameDate
+{
+	font-family: Montserrat, sans-serif;
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+
+#list-of-games
+{
+	margin-top: 20px;
+	border-style: solid;
+	border-color: #eee;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	padding: 5px;
+}
+
+#games
+{
+/*	background: linear-gradient(#FFCF30, #FF6130);
+*/	position: relative;
+	z-index: 1;
+}
+#games-image
+{
+	height: 10em;
+}
+#games-content
+{
+/*	background-color: #fff;
+*/}
+#games-header
+{
+	background-color: #FFCC26;
+}
+
+#in-development-button
+{
+}

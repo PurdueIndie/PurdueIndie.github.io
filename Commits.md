@@ -23,3 +23,13 @@ Part 2
 3. Made it so that clicking on all buttons on the menu doesn't make you scroll to every part before it stops scrolling (with the jQuery .stop() function, which can empty the animation queue)
 4. Added Henry's website to his profile
 5. Updated Brendan's profile picture to the one he wants
+
+Part 3
+1. Added mo4r parallax
+2. Changed bottom to clouds (we should change this later)
+
+To do:
+1. Fix mobile
+2. Resize game cards
+3. Update all the content-images to be smaller
+4. Add Wesley and Henry's games

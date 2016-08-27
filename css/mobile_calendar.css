@@ -1,0 +1,18 @@
+#calendar
+{
+	position: relative;
+	z-index: 1;
+}
+#calendar-image
+{
+	height: 10em;
+	background: linear-gradient(#5DB033, #000);
+}
+#calendar-content
+{
+/*	background-color: #fff;
+*/}
+#calendar-header
+{
+	background-color: #50DE84;
+}

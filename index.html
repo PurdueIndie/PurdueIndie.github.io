@@ -30,15 +30,24 @@
 <!--stylesheets & fonts-->
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
-
-<link rel="stylesheet" type="text/css" href="css/content.css">
-<link rel="stylesheet" type="text/css" href="css/splash.css">
-<link rel="stylesheet" type="text/css" href="css/about.css">
-<link rel="stylesheet" type="text/css" href="css/calendar.css">
-<link rel="stylesheet" type="text/css" href="css/games.css">
-<link rel="stylesheet" type="text/css" href="css/podcasts.css">
-<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" type="text/css" href="css/content.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" type="text/css" href="css/splash.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" type="text/css" href="css/about.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" type="text/css" href="css/calendar.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" type="text/css" href="css/games.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" type="text/css" href="css/podcasts.css">
+<link rel="stylesheet" media="screen and (min-device-width: 800px)" type="text/css" href="css/contact.css">
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<!--for mobile screens-->
+<link rel="stylesheet" media="screen and (max-device-width: 799px)" type="text/css" href="css/mobile_content.css">
+<link rel="stylesheet" media="screen and (max-device-width: 799px)" type="text/css" href="css/mobile_splash.css">
+<link rel="stylesheet" media="screen and (max-device-width: 799px)" type="text/css" href="css/mobile_about.css">
+<link rel="stylesheet" media="screen and (max-device-width: 799px)" type="text/css" href="css/mobile_calendar.css">
+<link rel="stylesheet" media="screen and (max-device-width: 799px)" type="text/css" href="css/mobile_games.css">
+<link rel="stylesheet" media="screen and (max-device-width: 799px)" type="text/css" href="css/mobile_podcasts.css">
+<link rel="stylesheet" media="screen and (max-device-width: 799px)" type="text/css" href="css/mobile_contact.css">
+
 <!--end stylesheets-->
 <!--javascript-->
 <script src="js/jquery-3.0.0.min.js"></script>
@@ -58,9 +67,9 @@
         </ul>
     </div>
 	<div id="splash">
-        <img src="images/splash/TowerSmallPixelArt.png" alt="The bell tower stands stoic and tall" style="width: auto; position: fixed;max-height: 40vw; min-height: 40vw; top: calc(20vh - 6.5em); left: 70vw; z-index: 200; image-rendering: pixelated;">
-        <img src="images/splash/hills_pixel_art.png" alt="In the background, the hills are brimming with life, symbolizing greatness" style="width: 100vw; position: fixed; top: calc(15vh - 3.5em - 100px); z-index: 100; image-rendering: pixelated;">
-        <img src="images/splash/clouds.png" alt="The heavenly clouds bask Purdue with glory" style="width: 100vw; position: absolute; top: calc(12vh - 3.5em - 100px); z-index: 300; image-rendering: pixelated;">
+        <img id="bell-tower" src="images/splash/TowerSmallPixelArt.png" alt="The bell tower stands stoic and tall">
+        <img id="green-hills" src="images/splash/hills_pixel_art.png" alt="In the background, the hills are brimming with life, symbolizing greatness">
+        <img id="clouds" src="images/splash/clouds.png" alt="The heavenly clouds bask Purdue with glory">
         <div id="title" style="z-index: 100; position: fixed;">Purdue Indie Game Developer's Club</div>
     </div>
     <div id="content">
@@ -207,8 +216,9 @@
                 <br>If you want to see our website's repository, <a href="https://github.com/PurdueIndieGameDev/PurdueIndieGameDev.github.io" class="contact-email">click here.</a></p>
             </div>
             <div class="cover-image" id="contact-image">
-                <img src="images/splash/bridge.png" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
-                <img src="images/splash/trees.png" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">
+            <img src="images/splash/clouds.png" alt="The heavenly clouds bask Purdue with glory" style="width: 100vw; position: absolute; top: -350px; z-index: 300; image-rendering: pixelated;">
+    <!--            <img src="images/splash/bridge.png" alt="Bridge" style="width: 100%; position: absolute; top: 1em; z-index: 1;">
+                <img src="images/splash/trees.png" alt="Trees" style="width: 100%; position: absolute; top: 0em; z-index: 2;">-->
             </div>
         </div>
 

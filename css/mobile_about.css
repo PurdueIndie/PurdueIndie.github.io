@@ -1,0 +1,73 @@
+@keyframe wiggle
+{
+	
+}
+.card-table
+{
+	float: bottom;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+.question-card
+{
+	vertical-align: top;
+	position: relative;
+	display: inline-block;
+	font-family: Montserrat, sans-serif;
+	background-color: #57C4E6;
+	color: white;
+	font-size: 120%;
+	min-width: 10em;
+	max-width: 10em;
+	min-height: 14em;
+	max-height: 14em;
+	padding-top: 1em;
+	padding-left: 0.5em;
+	line-height: 1.2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border-radius: 1em;
+	text-align: left;
+	border-style: solid;
+/*	box-shadow: 1em #000 solid;
+*/	border-color: #eef;
+	border-width: 0.3em;
+}
+	.question-card:hover
+	{
+		cursor: pointer;
+	}
+	.question-card:onClick
+	{
+		background-color: pink;
+	}
+
+#about
+{
+	position: relative;
+	z-index: 1;
+}
+#about-image
+{
+	background: linear-gradient(#293e62, #FFF);
+}
+#about-content
+{
+/*	background-color: #fff;
+*/}
+#about-header
+{
+	background-color: #57C4E6;
+}
+#find-officer
+{
+	color: #46B3D5;
+	text-decoration: underline;
+}
+	#find-officer:hover
+	{
+		cursor: pointer;
+	}

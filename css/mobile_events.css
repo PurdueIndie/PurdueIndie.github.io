@@ -1,0 +1,34 @@
+#eventList {
+    text-align: left;
+    margin-left: 15em;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+#eventList li {
+    padding: .5em;
+}
+
+h1 {
+    text-align: center;
+    /*padding-left: 3.5em;*/
+}
+h2 {
+    text-align: left;
+    padding-left: 5em;
+}
+
+hr {
+    border: 2px solid black;
+    width: 80%;
+    color: black;
+    border-radius: 50px;
+}
+
+iframe {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}

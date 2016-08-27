@@ -13,41 +13,17 @@ hr
 
 #menu
 {
-	background-color: #EBEBEB;/*#333b3d*/
-	position: absolute;
-	bottom: 0px;
-	left: 100%;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
-	width: 100%;
-	z-index: 2000;
-	text-align: center;
-	height: 2.4em;
-	opacity: 0.97;
+	display: none;
 }
 
 #menu li
 {
 	display: none;
-	position: relative;
-	right: 100%;
-	display: inline;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-top: 0.7em;
-	padding-bottom: 0.7em;
-	cursor: pointer;
 }
 
 #menu-background
 {
-	z-index: 2000;
-	height: 3.5em;
-	position: absolute;
-	top: calc(100vh - 3.5em);
-	width: 100%;
-	background-color: #EBEBEB;
-	opacity: 0.97;
+	display: none;
 }
 #menu-about:hover
 {
@@ -77,8 +53,8 @@ hr
 	overflow: hidden;
 	margin: 0;
 	position: relative;/*required for overflow:hidden to work...*/
-	background-image: url("../images/splash/gradient.png");
-	background-size: 100vw 90vh;
+	background-image: url("../images/splash/reversed_gradient.png");
+	background-size: 100vw 100vh;
 	/*background: linear-gradient(#5BD1E3, #fff);#293E62,#FFF*/
 	/*background: linear-gradient(#293e62, #FFF);*/
 	/*background-attachment: fixed;*/
@@ -89,13 +65,13 @@ hr
 #title
 {
 	position: fixed;
-	top: 25vh;
+	top: 40vh;
 	left: calc(50vw - 8em);
 	min-width: 16em;
-	font-size: 200%;
+	font-size: 330%;
 	max-width: 16em;
 	text-align: center;
-	line-height: 1.3;
+	line-height: 1.5;
 	color: white;
 	font-family: 'eightBit';
 /*	font-family: 'Montserrat', sans-serif;	
@@ -104,31 +80,29 @@ hr
 
 #clouds
 {
-	width: 100vw;
+	width: 140vw;
 	position: absolute;
-	bottom: 3em;
-/*	top: calc(12vh - 3.5em - 50px);
-*/	z-index: 300;
+	bottom: 0px;
+	left: -20vw;
+	z-index: 300;
 	image-rendering: pixelated;
 }
 #bell-tower
 {
 	width: auto;
 	position: fixed;
-	max-height: 40vw;
-	min-height: 40vw;
-	bottom: 3.5em;
-/*	top: calc(20vh - 6.5em);
-*/	left: 70vw;
+	max-height: 60vw;
+	min-height: 60vw;
+	bottom: 0px;
+	left: 70vw;
 	z-index: 200;
 	image-rendering: pixelated;
 }
 #green-hills
 {
-	width: 100vw;
+	width: 150vw;
 	position: fixed;
-	bottom: 0em;
-/*	top: calc(15vh - 3.5em - 50px);
-*/	z-index: 100;
+	bottom: 0px;
+	z-index: 100;
 	image-rendering: pixelated;
 }
