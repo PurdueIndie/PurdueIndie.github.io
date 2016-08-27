@@ -31,6 +31,8 @@
 	font-family: Arial, sans-serif;
 	height: 20em;
 	margin-bottom: 1em;
+	font-size: 170%;
+	line-height: 2em;
 	width: 100%;
 	text-decoration: none;
 	overflow: hidden;
@@ -48,11 +50,12 @@
 	position: relative;
 	display: inline;
 	float: right;
-	max-width: 50%;
-	min-width: 50%;
+	max-width: 70%;
+	min-width: 70%;
 	height: 100%;
 	background-color: black;
 	text-align: center;
+	z-index: 0;		
 }
 .gameCardImage>img
 {
@@ -65,18 +68,21 @@
 }
 
 	.gameCard>span>p{
+		display: none;
 		margin-left: 0%;
 		margin-right: 0%;
+		z-index: 2;		
 	}
 	.gameCard>span{
-		position: relative;
+		position: absolute;
 		display: inline-block;
 		float: left;
 		margin: 0;
 		line-height: 1.2em;
 		padding-top: 2em;
 		padding-left: 1em;	
-		max-width: calc(50% - 1em);
+		min-width: calc(25% - 1em);
+		max-width: calc(25% - 1em);
 		height: 18em;
 	}
 	.gameCard>span>h1{
@@ -102,16 +108,16 @@
 }
 .gameCardPlatforms
 {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
+	position: relative;
+	top: 1em;
+	text-align: center;
 }
 .gameDate
 {
 	font-family: Montserrat, sans-serif;
-	position: absolute;
-	left: 5px;
-	bottom: 5px;
+	position: relative;
+	top: 0.5em;
+	text-align: center;
 }
 
 #list-of-games
