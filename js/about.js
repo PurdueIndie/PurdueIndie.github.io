@@ -98,6 +98,7 @@ function attachClickToFAQ(id)
 	$("#q" + id).click(function(){
 		//3D transform
 		//console.log($("#q"+id).css("display", "none"));
+		$("#q" + id).css("animation-delay", "0s");
 		$("#q" + id).css("animation-name", "flip");
 		$("#q" + id).css("animation-duration", "0.5s");
 		$("#q" + id).css("animation-iteration-count", "1");
