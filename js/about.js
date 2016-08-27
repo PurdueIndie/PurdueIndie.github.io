@@ -17,31 +17,38 @@ Answer Cards:
 var faq = [
 	{
 		question: "Can I join?",
-		answer: "If you're a student of Purdue or affiliated with Purdue (staff, faculty, etc.), join us!"
+		answer: "If you're a student of Purdue or affiliated with Purdue (staff, faculty, etc.), join us!",
+		side: 1//side is used for managing which side the q/a card flips to, with +1 being to q, -1 to a
 	},
 	{
 		question: "When and where does the club meet?",
-		answer: "(Spring 2016)<br><br>Thurs: 6pm - 8pm in LWSN B131<br><br>Sat: 4pm - 6pm in LWSN B155"
+		answer: "(Spring 2016)<br><br>Thurs: 6pm - 8pm in LWSN B131<br><br>Sat: 4pm - 6pm in LWSN B155",
+		side: 1
 	},
 	{
 		question: "Are there club dues?",
-		answer: "Yes. $5 per semester."
+		answer: "Yes. $5 per semester.",
+		side: 1
 	},
 	{
 		question:"What makes you different from other game development clubs on campus? <br> (for example, ACM's SIGGD?)",
-		answer: "The <a>other club</a> works on one project every semester as one unified team.<br><br>Our club is a place to work on your own projects at your own pace with friends."
+		answer: "The <a>other club</a> works on one project every semester as one unified team.<br><br>Our club is a place to work on your own projects at your own pace with friends.",
+		side: 1
 	},
 	{
 		question: "Do you guys have hardware we can use?",
-		answer: "We have access to <a>Purdue CS Department hardware</a> and can lend them out."
+		answer: "We have access to <a>Purdue CS Department hardware</a> and can lend them out.",
+		side: 1
 	},
 	{
 		question: "I'm from another club and would like to collaborate for an event!",
-		answer: "Awesome! Either find an officer or just send us an e-mail. <br><br> We'll probably get back to you by the end of the day."
+		answer: "Awesome! Either find an officer or just send us an e-mail. <br><br> We'll probably get back to you by the end of the day.",
+		side: 1
 	},
 	{
 		question: "What if I have a question that wasn't on the FAQ?",
-		answer: "No worries! E-mail us the question! <br><br>Who knows, it may end up on the FAQ!"
+		answer: "No worries! E-mail us the question! <br><br>Who knows, it may end up on the FAQ!",
+		side: 1
 	}
 ]
 
@@ -95,11 +102,30 @@ function attachClickToFAQ(id)
 		$("#q" + id).css("animation-duration", "1s");
 		$("#q" + id).css("animation-iteration-count", "1");
 		//and alternate between question-card and answer-card classes in one animation sequence
-		setTimeout(function()
+		if(faq[id].side == 1)
+		{
+			setTimeout(function()
+				{
+					$("#q" + id).html(faq[id].answer)
+			}, 500);
+		}
+		else
+		{
+			setTimeout(function()
+				{
+					$("#q" + id).html(faq[id].question)
+			}, 500);
+			setTimeout(function()
 			{
-				$("#q" + id).html(faq[id].answer)
-		}, 500);
-		console.log("this" + id);
+				$("#q" + id).css("animation-name", "wiggle");
+				$("#q" + id).css("animation-duration", "2s");
+				$("#q" + id).css("animation-iteration-count", "infinite");				
+			}, 1500);
+		}
+		faq[id].side*=-1;	
+		setTimeout(function(){
+		$("#q" + id).css("animation-name", "none");
+		}, 1000);//if you have the same animation, it won't re-animate it		
 	});
 }
 
