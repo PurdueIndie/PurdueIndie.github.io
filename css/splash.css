@@ -89,7 +89,7 @@ hr
 #title
 {
 	position: fixed;
-	top: 25vh;
+	top: 23vh;
 	left: calc(50vw - 8em);
 	min-width: 16em;
 	font-size: 200%;
@@ -106,7 +106,7 @@ hr
 {
 	width: 100vw;
 	position: absolute;
-	bottom: 3em;
+	bottom: 2em;
 /*	top: calc(12vh - 3.5em - 50px);
 */	z-index: 300;
 	image-rendering: pixelated;
@@ -117,7 +117,7 @@ hr
 	position: fixed;
 	max-height: 40vw;
 	min-height: 40vw;
-	bottom: 3.5em;
+	bottom: 2.7em;
 /*	top: calc(20vh - 6.5em);
 */	left: 70vw;
 	z-index: 200;
@@ -127,7 +127,7 @@ hr
 {
 	width: 100vw;
 	position: fixed;
-	bottom: 0em;
+	bottom: -2.5em;
 /*	top: calc(15vh - 3.5em - 50px);
 */	z-index: 100;
 	image-rendering: pixelated;
