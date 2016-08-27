@@ -61,6 +61,8 @@
 #contact-image
 {
 	overflow: visible;
+	background-color: white;
+	padding-top: 200px;
 }
 	#contact-image>img/*for the cloud at bottom*/
 	{

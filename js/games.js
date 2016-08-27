@@ -114,12 +114,12 @@ function displayGames(list)
 	{
 		var game = list[i];
 		component = "<a href=\"{0}\" class=\"gameCard\" id=\"{1}\">\n".format(game.link, "g" + i);
-		component = component.concat("\t<div class=\"gameCardImage\"> <img src=\"{0}\" alt=\"A screenshot of {1}\"></img></div>\n".format(game.image, game.title));
 		component = component.concat("\t<span><h1>{0}</h1>&nbsp;<hr><h2>by {1}</h2>\n".format(game.title, game.creator));
 		component = component.concat("\t<p>{0}</p>\n".format(game.description));
 		component = component.concat("\t<div class=\"gameDate\">{0}</div>\n".format(game.date));
 		component = component.concat("\t<div class=\"gameCardPlatforms\">{0}</div>\n".format(game.platforms));
-		component = component.concat("</span></a>\n");
+		component = component.concat("</span>\t<div class=\"gameCardImage\"> <img src=\"{0}\" alt=\"A screenshot of {1}\"></img></div>\n".format(game.image, game.title));
+		component = component.concat("</a>\n");
 		$("#list-of-games").append(component);
 		$("#" + i).find("h1").css("background-color", game.color);
 	}

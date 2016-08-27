@@ -101,10 +101,12 @@ $(document).ready(function()
 	$("#find-officer").click(function(){
 		scrollTo("#contact");
 	})
+	if($("#menu").css("display") != "none")
+	{
+		$(document).scroll(parallax);
+	}
 });
 
-if($("#menu").css("display") != "none")
-	$(document).scroll(parallax);
 
 /*
 $(window).resize(function()
