@@ -99,7 +99,7 @@ function attachClickToFAQ(id)
 		//3D transform
 		//console.log($("#q"+id).css("display", "none"));
 		$("#q" + id).css("animation-name", "flip");
-		$("#q" + id).css("animation-duration", "1s");
+		$("#q" + id).css("animation-duration", "0.5s");
 		$("#q" + id).css("animation-iteration-count", "1");
 		//and alternate between question-card and answer-card classes in one animation sequence
 		if(faq[id].side == 1)
@@ -107,25 +107,29 @@ function attachClickToFAQ(id)
 			setTimeout(function()
 				{
 					$("#q" + id).html(faq[id].answer)
-			}, 500);
+					$("#q" + id).css("background-color", "white");
+					$("#q" + id).css("color", "#57C4E6");			
+			}, 250);
 		}
 		else
 		{
 			setTimeout(function()
 				{
 					$("#q" + id).html(faq[id].question)
-			}, 500);
+					$("#q" + id).css("background-color", "#57C4E6");
+					$("#q" + id).css("color", "white");					
+			}, 250);
 			setTimeout(function()
 			{
 				$("#q" + id).css("animation-name", "wiggle");
 				$("#q" + id).css("animation-duration", "2s");
 				$("#q" + id).css("animation-iteration-count", "infinite");				
-			}, 1500);
+			}, 750);
 		}
 		faq[id].side*=-1;	
 		setTimeout(function(){
 		$("#q" + id).css("animation-name", "none");
-		}, 1000);//if you have the same animation, it won't re-animate it		
+		}, 500);//if you have the same animation, it won't re-animate it		
 	});
 }
 
