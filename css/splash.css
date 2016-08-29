@@ -3,6 +3,18 @@ hr
     width: 100%;
 }
 
+#announcement
+{
+	position: relative;
+	text-align: center;
+	font-family: Montserrat;
+	z-index: 500;
+}
+	#announcement:hover
+	{
+		text-decoration: underline;
+	}
+
 #home
 {
 	width: 1.5em;
@@ -68,6 +80,11 @@ hr
 #menu-contact:hover
 {
 	background-color: #DE475B;
+}
+#menu-join:hover
+{
+	background-color: #FFFFFF;
+	text-decoration: overline;
 }
 
 #splash

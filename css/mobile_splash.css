@@ -2,6 +2,27 @@ hr
 {
     width: 100%;
 }
+.temp-button
+{
+	position: relative;
+	background-color: #1FE9FF;
+	font-family: Montserrat, sans-serif;
+	display: inline-block;
+	padding: 15px;
+	border-style: solid;
+	border-color: #333;
+	border-bottom-width: 5px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+#announcement
+{
+	position: relative;
+	left: calc(50vw - 6em);
+	z-index: 500;
+	font-size: 300%;
+	color: white;
+}
 
 #home
 {

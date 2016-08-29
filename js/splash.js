@@ -39,6 +39,7 @@ function parallax()
 		//Converts em (what we use in our css) to px
 		var emSize = parseFloat($("body").css("font-size"));
 		//Scale down the scroll factor by 0.4
+		//$("#announcement").css("opacity", (1.00 - scroll*0.01));
 		$("#bell-tower").css("transform", "translateY(" + (-1*emSize-scroll*0.05) + "px)");
 		//$("#title").css("transform", "translateY(" + (-1*emSize-scroll*0.3) + "px)");
 		$("#green-hills").css("transform", "translateY(" + (-1*emSize-scroll*0.6) + "px)");
@@ -103,6 +104,7 @@ $(document).ready(function()
 	})
 	if($("#menu").css("display") != "none")
 	{
+		//console.log("paralaxing");
 		$(document).scroll(parallax);
 	}
 });
