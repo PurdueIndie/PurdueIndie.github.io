@@ -118,6 +118,22 @@ hr
 /*	font-family: 'Montserrat', sans-serif;	
 */	text-shadow: 1px 1px 3px rgba(0, 100, 100, 1);
 }
+#subtitle
+{
+	position: fixed;
+	top: calc(23vh + 6em);
+	left: calc(50vw - 16em);
+	min-width: 32em;
+	font-size: 100%;
+	max-width: 32em;
+	text-align: center;
+	line-height: 1.3;
+	color: rgba(250, 250, 250, 1);
+	font-family: 'Montserrat';
+	text-decoration: ;
+/*	font-family: 'Montserrat', sans-serif;	
+*/	text-shadow: 1px 1px 3px rgba(0, 100, 100, 1);
+}
 
 #clouds
 {

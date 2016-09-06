@@ -46,49 +46,49 @@ var inDevelopmentGames = [
 		platforms: linux.concat(apple).concat(windows)
 	}*/
 	{
-		link: "404error",
-		title: "Adventure to Indigo Road (temp name)",
+		link: "",
+		title: "Project: Adventure to Indigo Road",
 		creator: "Wesley Shin",
-		image: "image.jpg",
-		description: "Description to be posted later.",
-		gif: "gif.gif",
+		image: "",
+		description: "Adventure to Indigo Road is a 2D platformer made in Game Maker.",
+		gif: "",
 		color: "#FFF",
 		date: "STARTED SPRING 2016",
 		platforms: windows
 	},
 	{
-		link: "404error",
-		title: "Overlord (temp name)",
+		link: "",
+		title: "Project: Overlord",
 		creator: "Henry Poggie",
-		image: "image.jpg",
-		description: "Description to be posted later.",
-		gif: "gif.gif",
+		image: "",
+		description: "Overlord is a two player card game with predefined decks. The main mechanic of the game involves mana - if you hit a certain mana point, you lose; however, the more mana you have the more you can do, meaning the more powerful you are the closer you are to death.",
+		gif: "",
 		color: "#FFF",
 		date: "STARTED SPRING 2016",
 		platforms: linux		
 	},
 	{
-		link: "404error",
-		title: "Rogue Adventure (temp name)",
-		creator: "Brendan Raftery",
-		image: "image.jpg",
-		description: "Description to be posted later.",
-		gif: "gif.gif",
+		link: "",
+		title: "Project: Rogue Adventure",
+		creator: "Brendan Raftery and Maxwell Oldt",
+		image: "images/games/rogue_adventure.png",
+		description: "Every adventure is different. This is a text focused game currently being developed by Brendan Raftery and Maxwell Oldt in Unity.",
+		gif: "images/games/rogue_adventure.png",
 		color: "#FFF",
 		date: "STARTED SPRING 2016",
-		platforms: linux		
+		platforms: windows		
 	},
 	{
-		link: "404error",
-		title: "Legacy Dungeon (temp name)",
+		link: "",
+		title: "Project: Legacy Dungeon",
 		creator: "Charlie Su",
-		image: "image.jpg",
-		description: "Description to be posted later.",
-		gif: "gif.gif",
+		image: "",
+		description: "A 2D top down dungeon crawler that is more narrative based. The game is built from scratch, working directly with OpenGL 3.2. Current work done include keyboard input, maintaining aspect ratios, sprite loading, and basic animations.",
+		gif: "",
 		color: "#FFF",
 		date: "STARTED SPRING 2016",
-		platforms: linux		
-	}	
+		platforms: linux.concat(windows)
+	}
 ];
 
 /*
@@ -180,7 +180,7 @@ function displayGames(list)
 	for(var i = 0; i < list.length; i++)
 	{
 		var game = list[i];
-		component = "<a href=\"{0}\" class=\"gameCard\" id=\"{1}\">\n".format(game.link, "g" + i);
+		component = "<a target=\"_blank\" href=\"{0}\" class=\"gameCard\" id=\"{1}\">\n".format(game.link, "g" + i);
 		component = component.concat("\t<span><h1>{0}</h1>&nbsp;<hr><h2>by {1}</h2>\n".format(game.title, game.creator));
 		component = component.concat("\t<p>{0}</p>\n".format(game.description));
 		component = component.concat("\t<div class=\"gameDate\">{0}</div>\n".format(game.date));
