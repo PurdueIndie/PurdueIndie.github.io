@@ -22,7 +22,7 @@ var faq = [
 	},
 	{
 		question: "When and where does the club meet?",
-		answer: "(Spring 2016)<br><br>Thurs: 6pm - 8pm in LWSN B131<br><br>Sat: 4pm - 6pm in LWSN B155",
+		answer: "(Fall 2016)<br>We're voting on that right now! If you're on the mailing list, you should've received a survey about your availibility.",
 		side: 1
 	},
 	{
