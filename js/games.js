@@ -108,6 +108,17 @@ var completedGames = [
 		platforms: windows
 	},*/
 	{
+		link: "http://www.indiedb.com/games/felixs-computer",
+		title: "Felix's Computer",
+		creator: "Mangkorn Yuan",
+		image: "images/games/felixs_computer.png",
+		description: "Wipe out all those malicious files from Felix's computer top-down shooter style as the world's greatest antivirus software! Play the assault mode where you knock down endless waves of computer viruses or play the hunt mode where you travel across the procedurally generated digital pathway to shoot down all those malicious bots!",
+		gif: "images/games/felixs_Computer.gif",
+		color: "#70E070",
+		date: "SUMMER 2016",
+		platforms: windows
+	},
+	{
 		link: "http://gamejolt.com/games/the-runner/80654",
 		title: "The Runner",
 		creator: "Brendan Raftery",
