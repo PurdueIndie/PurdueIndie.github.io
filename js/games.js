@@ -20,14 +20,15 @@ CSS of each box:
 }
 */
 
-/*defining image tags for OS platforms*/
+/*defining image tags for platforms*/
 var desktop = "<img src=\"images/os_icons/desktop.png\">";
 var mobile = "<img src=\"images/os_icons/mobile.png\">";
-var windows = "<img src=\"images/os_icons/windows.png\">";//same icons for phone and desktop
+var windows = "<img src=\"images/os_icons/windows.svg\">";//same icons for phone and desktop
 var linux = "<img src=\"images/os_icons/linux.png\">";
 var apple = "<img src=\"images/os_icons/apple.png\">";//same icons for mac and ios
 var android = "<img src=\"images/os_icons/android.png\">";
-
+var cards = "<img src=\"images/os_icons/cards.ico\">";
+var board = "<img src=\"images/os_icons/board.png\">";
 /*
 Array holding the list of in progress games. 
 The key is a string (usually the game's title), the value is an object with descriptions of the game.
@@ -65,12 +66,12 @@ var inDevelopmentGames = [
 		gif: "",
 		color: "#FFF",
 		date: "STARTED SPRING 2016",
-		platforms: linux		
+		platforms: cards		
 	},
 	{
 		link: "",
 		title: "Project: Rogue Adventure",
-		creator: "Brendan Raftery and Maxwell Oldt",
+		creator: "Brendan Raftery",
 		image: "images/games/rogue_adventure.png",
 		description: "Every adventure is different. This is a text focused game currently being developed by Brendan Raftery and Maxwell Oldt in Unity.",
 		gif: "images/games/rogue_adventure.png",
@@ -273,13 +274,18 @@ function attachHover(list, id)
 	$("#g"+id+" .gameCardImage").find("img").attr("src", list[id].gif);
 	$(this).css("background", list[id].color);
 	if(list[id].text != null)
+	{
 		$(this).css("color", list[id].text);
+		//$(this).find("svg")[0].css("fill", list[id].text);
+	}
 }, function()
 {
 	$("#g"+id+" .gameCardImage").find("img").attr("src", list[id].image);
 	$(this).css("background", "linear-gradient(90deg, #fff,#ddd)");
 	if(list[id].text != null)
+	{
 		$(this).css("color", "black");
+	}
 });			
 }
 

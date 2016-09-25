@@ -22,7 +22,7 @@ var faq = [
 	},
 	{
 		question: "When and where does the club meet?",
-		answer: "(Fall 2016)<br>We're voting on that right now! If you're on the mailing list, you should've received a survey about your availibility.",
+		answer: "(Fall 2016)<br>We meet Thursdays 7:00-8:00pm and Saturdays 5:30-7:00pm in Lawson B160.",
 		side: 1
 	},
 	{
