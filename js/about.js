@@ -22,7 +22,7 @@ var faq = [
 	},
 	{
 		question: "When and where does the club meet?",
-		answer: "(Fall 2016)<br>We meet Thursdays 7:00-8:00pm and Saturdays 5:30-7:00pm in Lawson B160.",
+		answer: "(Spring 2017)<br>We meet Thursdays 7:00-8:30pm in Lawson Hall Rm B131 and Saturdays 5:30-8:30pm in Stewart Hall Rm 320.",
 		side: 1
 	},
 	{
