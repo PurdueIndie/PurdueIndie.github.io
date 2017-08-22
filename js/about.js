@@ -22,7 +22,7 @@ var faq = [
 	},
 	{
 		question: "When and where is the call out?",
-		answer: "Our call out is on 8/29 (Tues) and 9/1 (Fri) 5pm-6pm in Matthews Hall Rm 210. Hope to see you there!",
+		answer: "Our call out is on 8/29 (Tuesday) and 9/1 (Friday) at 5pm in Matthews 210. We hope to see you there!",
 		side: 1
 	},
 	{
@@ -42,12 +42,12 @@ var faq = [
 	},
 	{
 		question: "I'm from another club and would like to collaborate for an event!",
-		answer: "Awesome! Either find an officer or just send us an e-mail at <a href=\"mailto:purdueindie@gmail.com\">purdueindie@gmail.com</a>. <br><br> We'll get back to you by the end of the day.",
+		answer: "Awesome! Either find an officer or just send us an e-mail at <a href=\"mailto:purdueindie @ gmail.com\">purdueindie@gmail.com</a>. <br><br> We'll get back to you by the end of the day.",
 		side: 1
 	},
 	{
 		question: "What if I have a question that wasn't on the FAQ?",
-		answer: "No worries! E-mail us the question at <a href=\"mailto:purdueindie@gmail.com\">purdueindie@gmail.com</a>! <br><br>Who knows, it may end up on the FAQ!",
+		answer: "No worries! E-mail us the question at <a href=\"mailto:purdueindie @ gmail.com\">purdueindie@gmail.com</a>! <br><br>Who knows, it may end up on the FAQ!",
 		side: 1
 	}
 ]
