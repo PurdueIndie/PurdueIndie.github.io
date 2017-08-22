@@ -21,8 +21,8 @@ var faq = [
 		side: 1//side is used for managing which side the q/a card flips to, with +1 being to q, -1 to a
 	},
 	{
-		question: "When and where does the club meet?",
-		answer: "(Spring 2017)<br>We meet Thursdays 7:00-8:30pm in Lawson Hall Rm B131 and Saturdays 5:30-8:30pm in Stewart Hall Rm 320.",
+		question: "When and where is the call out?",
+		answer: "Our call out is on 8/29 (Tues) and 9/1 (Fri) 5pm-6pm in Matthews Hall Rm 210. Hope to see you there!",
 		side: 1
 	},
 	{
@@ -42,12 +42,12 @@ var faq = [
 	},
 	{
 		question: "I'm from another club and would like to collaborate for an event!",
-		answer: "Awesome! Either find an officer or just send us an e-mail. <br><br> We'll probably get back to you by the end of the day.",
+		answer: "Awesome! Either find an officer or just send us an e-mail at <a href=\"mailto:purdueindie@gmail.com\">purdueindie@gmail.com</a>. <br><br> We'll get back to you by the end of the day.",
 		side: 1
 	},
 	{
 		question: "What if I have a question that wasn't on the FAQ?",
-		answer: "No worries! E-mail us the question! <br><br>Who knows, it may end up on the FAQ!",
+		answer: "No worries! E-mail us the question at <a href=\"mailto:purdueindie@gmail.com\">purdueindie@gmail.com</a>! <br><br>Who knows, it may end up on the FAQ!",
 		side: 1
 	}
 ]
