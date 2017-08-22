@@ -42,12 +42,12 @@ var faq = [
 	},
 	{
 		question: "I'm from another club and would like to collaborate for an event!",
-		answer: "Awesome! Either find an officer or just send us an e-mail at <a href=\"mailto:purdueindie @ gmail.com\">purdueindie@gmail.com</a>. <br><br> We'll get back to you by the end of the day.",
+		answer: "Awesome! Either find an officer or just send us an e-mail at <a href=\"mailto:purdueindie@gmail.com\">purdueindie@gmail .com</a>. <br><br> We'll get back to you by the end of the day.",
 		side: 1
 	},
 	{
 		question: "What if I have a question that wasn't on the FAQ?",
-		answer: "No worries! E-mail us the question at <a href=\"mailto:purdueindie @ gmail.com\">purdueindie@gmail.com</a>! <br><br>Who knows, it may end up on the FAQ!",
+		answer: "No worries! E-mail us the question at <a href=\"mailto:purdueindie@gmail.com\">purdueindie@gmail .com</a>! <br><br>Who knows, it may end up on the FAQ!",
 		side: 1
 	}
 ]
