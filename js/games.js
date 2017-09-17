@@ -97,17 +97,17 @@ Array holding the list of completed games.
 The key is a string (usually the game's title), the value is an object with descriptions of the game.
 */
 var completedGames = [
-	/*{
-		link: "https://github.com/DontSuCharlie/Legacy_Dungeon",
-		title: "Legacy Dungeon",
-		creator: "Charlie Su and Anish Kannan",
-		image: "images/games/legacy_dungeon.png",
-		description: "A game developed during high school. You can move, collect coins, kill monsters, and go down floors. Sometimes the skills you use can kill you. You need Java installed on your computer in order to compile and run this.",
-		gif: "images/games/legacy_dungeon.gif",
-		color: "#EB9F26",
-		date: "SUMMER 2014",
-		platforms: windows
-	},*/
+	{
+		link: "https://play.google.com/store/apps/details?id=com.TryHard.TorchHead",
+		title: "Torch Head",
+		creator: "Mangkorn Yuan",
+		image: "images/games/torchhead.jpg",
+		description: "You are Torch Head, the very last spark in a world of darkness. You were left alone to eventually fade out into the cold and become one with the shadows. Will you choose to give in? Will you let the darkness suffocate your flame like so many have? Or will you round up bombs… lots of bombs, and maybe a rifle while you’re at it.",
+		gif: "images/games/torchhead.gif",
+		color: "#F49D3A",
+		date: "SPRING 2017",
+		platforms: android
+	},
 	{
 		link: "http://www.indiedb.com/games/felixs-computer",
 		title: "Felix's Computer",

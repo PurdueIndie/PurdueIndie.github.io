@@ -16,35 +16,35 @@ Answer Cards:
 */
 var faq = [
 	{
-		question: "Can I join?",
-		answer: "If you're a student of Purdue or affiliated with Purdue (staff, faculty, etc.), join us!",
+		question: "How do I join?",
+		answer: "Come to one of our meetings! <a href=\"index.html#calendar\">Check the calendar for where and when we meet</a>",
 		side: 1//side is used for managing which side the q/a card flips to, with +1 being to q, -1 to a
 	},
+	// {
+	// 	question: "When and where is the call out?",
+	// 	answer: "Our call out is on 8/29 (Tuesday) and 9/1 (Friday) at 5pm in Matthews 210. We hope to see you there!",
+	// 	side: 1
+	// },
 	{
-		question: "When and where is the call out?",
-		answer: "Our call out is on 8/29 (Tuesday) and 9/1 (Friday) at 5pm in Matthews 210. We hope to see you there!",
-		side: 1
-	},
-	{
-		question: "Are there club dues?",
-		answer: "Yes. $5 per semester.",
-		side: 1
-	},
-	{
-		question:"What makes you different from other game development clubs on campus? <br> (for example, ACM's SIGGD?)",
+		question:"What makes you different from other game clubs on campus (i.e. SIGGD)?",
 		answer: "The <a>other club</a> works on one project every semester as one unified team.<br><br>Our club is a place to work on your own projects at your own pace with friends.",
 		side: 1
-	},
+	},	
 	{
-		question: "Do you guys have hardware we can use?",
-		answer: "We have access to <a>Purdue CS Department hardware</a> and can lend them out.",
+		question: "How much are the club dues?",
+		answer: "It's $5 per semester. $7 for the whole year.",
 		side: 1
 	},
-	{
-		question: "I'm from another club and would like to collaborate for an event!",
-		answer: "Awesome! Either find an officer or just send us an e-mail at <a href=\"mailto:purdueindie@gmail.com\">purdueindie@gmail .com</a>. <br><br> We'll get back to you by the end of the day.",
-		side: 1
-	},
+	// {
+	// 	question: "Do you guys have hardware we can use?",
+	// 	answer: "We have access to <a>Purdue CS Department hardware</a> and can lend them out.",
+	// 	side: 1
+	// },
+	// {
+	// 	question: "I'm from another club and would like to collaborate for an event!",
+	// 	answer: "Awesome! Either find an officer or just send us an e-mail at <a href=\"mailto:purdueindie@gmail.com\">purdueindie@gmail .com</a>. <br><br> We'll get back to you by the end of the day.",
+	// 	side: 1
+	// },
 	{
 		question: "What if I have a question that wasn't on the FAQ?",
 		answer: "No worries! E-mail us the question at <a href=\"mailto:purdueindie@gmail.com\">purdueindie@gmail .com</a>! <br><br>Who knows, it may end up on the FAQ!",
@@ -109,7 +109,7 @@ function attachClickToFAQ(id)
 				{
 					$("#q" + id).html(faq[id].answer)
 					$("#q" + id).css("background-color", "white");
-					$("#q" + id).css("color", "#57C4E6");			
+					$("#q" + id).css("color", "#112244");			
 			}, 250);
 		}
 		else

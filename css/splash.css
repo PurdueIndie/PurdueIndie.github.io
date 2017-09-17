@@ -25,7 +25,6 @@ hr
 
 #menu
 {
-	background-color: #EBEBEB;/*#333b3d*/
 	position: absolute;
 	bottom: 0px;
 	left: 100%;
@@ -58,7 +57,7 @@ hr
 	position: absolute;
 	top: calc(100vh - 3.5em);
 	width: 100%;
-	background-color: #EBEBEB;
+	background-color: #F0F0F0;
 	opacity: 0.97;
 }
 #menu-about:hover
