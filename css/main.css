@@ -1,0 +1,145 @@
+@font-face {
+        font-family: eightBit;
+        src: url("../fonts/8-BIT WONDER.TTF");
+}
+::selection {
+  background: #6E99B4; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #6E99B4; /* Gecko Browsers */
+}
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background-color: #000;
+}
+
+div
+{
+	text-align: center;	
+}
+
+svg path 
+{
+	fill: #48C6F0;
+}
+
+h1
+{
+	font-family: 'Cantarell', sans-serif;
+	text-align: center;
+	padding: 0.2em 0.2em 0.5em 0.2em;
+	display: inline-block;
+	font-size: 200%;
+	background-color: #6E99B4;
+/*	background-image: url('../images/brush.svg');
+*/	background-repeat: no-repeat;
+}
+
+#content
+{
+	position: relative; /* z-index only works on elements with positions... */
+	padding-left: 20%;
+	padding-right: 20%;
+	line-height: 24px;
+	text-align: left;
+	background-color: #252526;
+	z-index: 2;
+}
+
+#menu
+{
+	position: absolute;
+	bottom: 0px;
+	font-family: 'Cantarell', sans-serif;	
+	color: #fff;
+	font-size: 1em;
+	width: 100%;
+	text-align: center;
+	height: 2.4em;
+	opacity: 0.97;
+}
+
+#menu li
+{
+	display: none;
+	position: relative;
+	display: inline;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	cursor: pointer;
+}
+
+#menu-background
+{
+	z-index: 2000;
+	height: 3.5em;
+	position: absolute;
+	top: calc(100vh - 3.5em);
+	width: 100%;
+	background-color: #000;
+	opacity: 0.97;
+}
+
+#title
+{
+	z-index: 2;
+	position: fixed;
+	top: 23vh;
+	left: calc(50vw - 8em);
+	min-width: 16em;
+	font-size: 200%;
+	max-width: 16em;
+	text-align: center;
+	line-height: 1.3;
+	color: white;
+	font-family: 'eightBit', sans-serif;	
+	text-shadow: 1px 1px 3px #090030;
+}
+#credits
+{
+	position: absolute;
+	top: 75%;
+	right: 0;
+	min-width: 16em;
+	font-size: 120%;
+	text-align: right;
+	padding: 0.5em 2.5em 0.5em 0.5em;
+	color: white;
+	font-family: 'Cantarell', sans-serif;	
+	background-color: #090030;
+}
+#splash
+{
+	z-index: 1;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	position: relative;/*required for overflow:hidden to work...*/
+	background-image: url('../videos/test.gif');
+	background-size: cover;
+	/*background: linear-gradient(#5BD1E3, #fff);#293E62,#FFF*/
+	/*background: linear-gradient(#293e62, #FFF);*/
+	/*background-attachment: fixed;*/
+	background-repeat: no-repeat;	
+}
+
+#dark-overlay
+{
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#logo
+{
+	width: 100px;
+	height: 100px;
+}
+
+#about
+{
+	padding: 10% 5% 10% 5%;
+}

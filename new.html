@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Purdue Indie Game Developers' Club</title>
+<!--meta data for search engines-->
+<meta charset="UTF-8">
+<meta name="description" content="Anyone can join our club! We meet in WALC 3148 on Fridays 6:30pm - 8pm and on Sundays 1pm - 4pm.">
+<meta name="keywords" content="Purdue Game Dev, Purdue Game Developers, Indie Games, Game Development, IGDC, PIGDC, Purdue University, Purdue Game Dev Club">
+<!--Bootstrap prefers scaling for mobile first-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--end meta data-->
+
+<!--------------------->
+<!--Loading Bootstrap-->
+<!--------------------->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><!--Bootstrap depends on jQuery-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!--stylesheets & fonts-->
+<link href="https://fonts.googleapis.com/css?family=Cantarell:700|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<!--end stylesheets-->
+
+<!--favicon stuff-->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!--end favicon stuff-->
+
+<!--javascript-->
+<script src="js/format-google-calendar.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/splash.js"></script>
+<script src="js/about.js"></script>
+<script src="js/games.js"></script>
+<!--end javascript-->
+</head>
+<body>
+    <div id="menu-background">
+        <ul id="menu">
+            <li id="menu-about">ABOUT</li>
+            <li id="menu-calendar">SCHEDULE</li>
+            <li id="menu-faq">FAQ</li>
+            <li id="menu-games">GAMES</li>
+            <!--<li id="menu-join"><a target = "_blank" href="https://purdueindie.typeform.com/to/mQcL1V" style="cursor: pointer;">JOIN</a></li>-->
+        </ul>
+    </div>
+	<div id="splash">
+        <div id="title">PURDUE INDIE GAME DEVELOPERS' CLUB</div>
+        <div id="credits">Easter World by Wesley Shen (in development)</div>
+        <div id="dark-overlay"></div>
+    </div>
+    <div id="content">
+        <div id="about">
+            <div class="content" id="about-content">
+                <div>
+                    <img id="logo" src="images/IGDC_logo.svg" alt="IGDC logo"></img>
+                </div>
+                <div>
+                    <h1>anyone can join</h1>
+<!--                     <img src="images/brush.svg" style="height: 50px;"></img>
+ -->                </div>
+                <hr><br>
+                <p>Anyone, from any background, from any experience level, can join. We understand that game development is a unique field that requires diverse perspectives and disparate skillsets. We understand that, as a club in a university setting, we need a constant supply of fresh blood to sustain the collaborative environment we have built and to share the wisdom we have accrued.</p>
+                <hr>
+                <p>There is only one thing we ask of our members: being willing to dedicate time and energy into giving thoughtful feedback for members’ games.</p>
+            </div>
+        </div>
+
+        <div id="calendar">
+            <div class="content" id="calendar-content">
+                <h1 class="header" id="calendar-header">Our Schedule</h1>
+                <img src="images/R_robotRunningGif.gif" alt="sprite" class="header-sprite">
+                <hr>
+                <ul id="events-upcoming"></ul>
+                <!--<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=purdueindie%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0; display: block; margin: 0 auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+            </div>
+            <div class="cover-image" id="calendar-image">
+                <img src="images/splash/CloudDividers.png" alt="Bridge" style="width: 100%; image-rendering: pixelated;">
+            </div>
+        </div>
+
+       
+<!--                <p>If you're looking for a <em>past</em> officer, <a href="officersList.html" class="contact-email">click here.</a>-->
+            </div>
+            <p style="color: #A3B6C0; font-size: 80%">
+                Source code is available <a href="https://github.com/PurdueIndieGameDev/PurdueIndieGameDev.github.io" class="contact-email">here</a>.
+                <br>
+                Website designed by <a href="https://github.com/DontSuCharlie/" class="contact-email">Charlie Su</a>.
+                Art made by <a href="https://github.com/doctorb77/" class="contact-email">Brendan Raftery</a>.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
