@@ -30,11 +30,11 @@ var faq = [
 		answer: "The <a>other club</a> works on one project every semester as one unified team.<br><br>Our club is a place to work on your own projects at your own pace with friends.",
 		side: 1
 	},	
-	{
-		question: "How much are the club dues?",
-		answer: "It's $5 per semester. $7 for the whole year.",
-		side: 1
-	},
+	//{
+	//	question: "How much are the club dues?",
+	//	answer: "It's $5 per semester. $7 for the whole year.",
+	//	side: 1
+	//},
 	// {
 	// 	question: "Do you guys have hardware we can use?",
 	// 	answer: "We have access to <a>Purdue CS Department hardware</a> and can lend them out.",
